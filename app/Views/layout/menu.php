@@ -21,11 +21,10 @@
                          
                         <li class="sidebar-title ">profile</li>
 
-                        <li class="sidebar-item">
-                            <a href="#" class='sidebar-link'>
-                                <i class="bi bi-person-badge text-primary"></i>
+                        <li class="sidebar-item <?= (uri_string() == 'profile') ? 'active' : ''; ?>">
+                            <a href="<?= base_url('profile') ?>" class="sidebar-link">
+                                <i class="bi bi-person-badge text-primary <?= (uri_string() == 'profile') ? 'text-light' : ''; ?>"></i>
                                 <span >Account</span>
-                                <span class="badge bg-danger">soon</span>
                             </a>
                         </li>                        
                         <li class="sidebar-item">

@@ -1,4 +1,4 @@
-<?= $this->extend('v_template_backend') ?>
+<?= $this->extend('layout/v_template_backend') ?>
 <?= $this->section('content') ?>
            <section class="section">
                 <div class="page-heading">

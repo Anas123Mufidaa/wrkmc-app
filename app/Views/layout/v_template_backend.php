@@ -32,7 +32,7 @@
     <div id="app">
         <div id="sidebar" class="active">
         
-        <?= $this->include('menu') ?>
+        <?= $this->include('layout/menu') ?>
         </div>
         
         <div id="main">
