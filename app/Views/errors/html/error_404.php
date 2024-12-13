@@ -77,8 +77,48 @@
                 <?= nl2br(esc($message)) ?>
             <?php else : ?>
                 <?= lang('Errors.sorryCannotFind') ?>
-            <?php endif; ?>
+            <?php endif ?>
         </p>
     </div>
 </body>
 </html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= lang('Errors.pageNotFound') ?> - Naila Residence</title>
+    <link rel="icon"  type="image/png" href="<?= base_url('web_naila_residence') ?>/images/logo-web.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/bootstrap.css">
+    <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/app.css">
+    <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/pages/error.css">
+</head>
+<body>
+    <div id="error">
+
+        <div class="error-page container">
+            <div class="col-md-8 col-12 offset-md-2">
+                <img class="img-error" src="<?= base_url('backEnd_template') ?>/assets/images/samples/error-404.png" alt="Not Found">
+                <div class="text-center">
+                    <h1 class="error-title">404</h1>
+                    <p class='fs-5 text-gray-600'> 
+                    <?php if (ENVIRONMENT !== 'production') : ?>
+                        <?= nl2br(esc($message)) ?>
+                    <?php else : ?>
+                        <?= lang('Errors.sorryCannotFind') ?>
+                    <?php endif; ?></p>
+                    <a href="<?= base_url('/') ?>" class="btn btn-lg btn-outline-primary mt-3">Go Home</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html> -->
