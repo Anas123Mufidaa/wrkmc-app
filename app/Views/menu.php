@@ -2,7 +2,7 @@
 <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo" >
-                            <a href="index.html" class="text-dark">Wrkmc-<span class="text-primary">App</span></a>
+                            <a href="index.html" style="color:#FFC928;">Wrkmc-<span class="text-primary">App</span></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -12,23 +12,24 @@
                 <div class="sidebar-menu">
                     <ul class="menu">
 
-                        <li class="sidebar-item  <?= (uri_string() == '') ? 'active' : ''; ?>">
+                        <li class="sidebar-item <?= (uri_string() == 'dashboard') ? 'active' : ''; ?>">
                             <a href="<?= base_url('/') ?>" class="sidebar-link">
-                                <i class="bi bi-speedometer2"></i>
+                                <i class="bi bi-house-door-fill text-primary <?= (uri_string() == 'dashboard') ? 'text-light' : ''; ?>"></i>
                                 <span>Dashboard</span>
                             </a>
                         </li>
                          
                         <li class="sidebar-title ">profile</li>
 
-                        <li class="sidebar-item <?= (uri_string() == 'admin/profile') ? 'active' : ''; ?>">
-                            <a href="<?= base_url('admin/profile') ?>" class='sidebar-link'>
-                                <i class= " bi bi-person-badge"></i>
-                                <span >Akun</span>
+                        <li class="sidebar-item">
+                            <a href="#" class='sidebar-link'>
+                                <i class="bi bi-person-badge text-primary"></i>
+                                <span >Account</span>
+                                <span class="badge bg-danger">soon</span>
                             </a>
                         </li>                        
                         <li class="sidebar-item">
-                            <a href="<?= base_url('auth/logout') ?>" class='sidebar-link'>
+                            <a href="<?= base_url('logout') ?>" class='sidebar-link'>
                                 <i class="text-danger bi bi-power"></i>
                                 <span class="text-danger">Logout</span>
                             </a>

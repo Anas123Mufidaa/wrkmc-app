@@ -31,7 +31,7 @@
                             }
                         ?>
   
-                    <form action="#" method="post">
+                    <form action="<?= url_to('login/cek') ?>" method="post">
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="username" class="form-control form-control-xl" name="username" placeholder="Username" autocomplete="off">
                             <div class="form-control-icon">

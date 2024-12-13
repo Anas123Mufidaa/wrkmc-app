@@ -5,6 +5,18 @@
                     <h2 class="mb-0 lh-sm"><span class="bi bi-house-door-fill" style="height: 70px; width: 60px;"></span> <?= $title ?></h2>
                 </div>
 
+                <div class="card-body py-5 px-4">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar avatar-xl">
+                            <img src="<?= base_url('backEnd_template') ?>/assets/foto_user/<?= $data_user['foto_user']; ?>" alt="Face 1">
+                        </div>
+                        <div class="ms-3 name">
+                            <h5 class="font-bold">Nama : <?= $data_user['nama_user']; ?></h5>
+                            <h6 class="text-muted mb-0">Username :  <?= $data_user['username']; ?></h6>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="row">
                 <div class="col-6 col-lg-3 col-md-6">
                     <div class="card">
