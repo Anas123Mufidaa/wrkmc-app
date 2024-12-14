@@ -13,7 +13,7 @@
                     <ul class="menu">
 
                         <li class="sidebar-item <?= (uri_string() == 'dashboard') ? 'active' : ''; ?>">
-                            <a href="<?= base_url('/') ?>" class="sidebar-link">
+                            <a href="<?= base_url('dashboard') ?>" class="sidebar-link">
                                 <i class="bi bi-house-door-fill text-primary <?= (uri_string() == 'dashboard') ? 'text-light' : ''; ?>"></i>
                                 <span>Dashboard</span>
                             </a>
