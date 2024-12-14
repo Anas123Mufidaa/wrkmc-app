@@ -28,7 +28,7 @@
                             </a>
                         </li>                        
                         <li class="sidebar-item">
-                            <a href="<?= base_url('logout') ?>" class='sidebar-link'>
+                            <a href="<?= base_url('auth/logout') ?>" class='sidebar-link'>
                                 <i class="text-danger bi bi-power"></i>
                                 <span class="text-danger">Logout</span>
                             </a>

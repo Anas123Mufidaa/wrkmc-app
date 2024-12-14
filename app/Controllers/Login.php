@@ -47,7 +47,7 @@ class Login extends BaseController
 
         if (!$validation->withRequest($this->request)->run()) {
              session()->setFlashdata('error', \Config\Services::validation()->listErrors());
-             return redirect()->to(base_url('/'));
+             return redirect()->to(base_url('auth/login'));
         }
 
         $username = $this->request->getVar('username');
@@ -64,13 +64,13 @@ class Login extends BaseController
         } 
         else {
            session()->setFlashdata('failed', 'Username Atau Password Salah');
-           return redirect()->to(base_url('/'));
+           return redirect()->to(base_url('auth/login'));
         } 
     }
     public function logout()
     {
         session()->destroy();
-        return redirect()->to(base_url('/'));
+        return redirect()->to(base_url('auth/login'));
     }
     
     private function isLoggedIn(): bool

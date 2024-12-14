@@ -18,7 +18,7 @@
                                     </div>
                                     <div class="card-content">
                                         <div class="card-body">
-                                            <form action="<?= base_url('admin/profile/update-profile/' . $data_user['id_user']) ?>" method="POST" class="form form-vertical" enctype="multipart/form-data">
+                                            <form action="<?= base_url('profile/update-profile/' . $data_user['id_user']) ?>" method="POST" class="form form-vertical" enctype="multipart/form-data">
                                                 <?= csrf_field(); ?>
                                                 <input type="hidden" name="fotoUser_lama" value="<?= $data_user['foto_user']; ?>"> 
                                                 <div class="form-body">

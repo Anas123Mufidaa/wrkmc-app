@@ -22,7 +22,7 @@
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
                     <div class="auth-logo">
-                        <a href="index.html"><img src="<?= base_url('backEnd_template') ?>/Logo-PU.jpg" alt="Logo"></a>    
+                        <a href="index.html"><img src="<?= base_url('logo-wrkmc') ?>/Logo-PU.jpg" alt="Logo"></a>    
                     </div>
                     <h6 class="auth-title">Wrkmc <span>Apps</span></h6>
                         <?php
@@ -31,7 +31,7 @@
                             }
                         ?>
   
-                    <form action="<?= url_to('login/cek') ?>" method="post">
+                    <form action="<?= url_to('auth/login/cek') ?>" method="post">
                         <div class="form-group position-relative has-icon-left mb-4">
                             <input type="username" class="form-control form-control-xl" name="username" placeholder="Username" autocomplete="off">
                             <div class="form-control-icon">
@@ -49,7 +49,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-12 text-center">
-                        <p>Copyright &copy; by Anas Mufida 2024 &mdash;</p>
+                        <p>Created By &copy; by Anas Mufida 2024 &mdash;</p>
                     </div>
                 </div>
             </div>

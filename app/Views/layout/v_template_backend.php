@@ -40,7 +40,7 @@
         </div>
         <footer>
             <div class="footer clearfix mb-0 text-muted">
-                <p>2024 © Anas Mufida</p>
+                <p>Created By &copy; by Anas Mufida 2024 &mdash;</p>
             </div>
         </footer>
     </div>

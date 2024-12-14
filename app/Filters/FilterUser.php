@@ -11,7 +11,7 @@ class FilterUser implements FilterInterface
     public function before(RequestInterface $request, $arguments = null)
     {
         if (session()->get('logged_in') < 1) {
-            return redirect()->to(base_url('/'));
+            return redirect()->to(base_url('auth/login'));
         }
     }
 

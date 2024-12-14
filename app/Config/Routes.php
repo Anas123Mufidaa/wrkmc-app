@@ -6,7 +6,10 @@ use CodeIgniter\Router\RouteCollection;
  * @var RouteCollection $routes
  */
 $routes->group('/', function ($routes) {
-    $routes->get('', 'Login::index');
+    $routes->get('', 'Home::index');
+});
+$routes->group('auth', function ($routes) {
+    $routes->get('login', 'Login::index');
     $routes->post('login/cek', 'Login::cekLogin');
     $routes->get('logout', 'Login::logout');
 });
