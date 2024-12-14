@@ -44,7 +44,8 @@
                                 <i class="bi bi-shield-lock"></i>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Log in</button>
+                        <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Login</button>
+                        <a href="<?= base_url('/') ?>" class="btn btn-danger btn-block btn-lg shadow-lg mt-2">Back To Home</a>
                     </form>
                 </div>
                 <div class="row mt-4">

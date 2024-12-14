@@ -31,6 +31,7 @@ body{
     height:200px;
     width: 210px
 }
+
 @media screen and (max-width:767px){
     #auth #auth-left{
         padding:5rem

@@ -31,11 +31,11 @@
          </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item mt-2">
               <a class="nav-link" href="<?= base_url('/'); ?>">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?= base_url('auth/login'); ?>" ><button type="button" class="btn btn-outline-light">Masuk <i class="fa fa-sign-in"></i></button></a>
+              <a class="nav-link " href="<?= base_url('auth/login'); ?>" ><button type="button" class="btn btn-outline-light">Login <i class="fa fa-sign-in"></i></button></a>
             </li>
           </ul>
         </div>
