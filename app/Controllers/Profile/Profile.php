@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace App\Controllers\Profile;
 use App\Controllers\BaseController;
 use App\Models\ModelAuth;
 class Profile extends BaseController
@@ -15,7 +15,7 @@ class Profile extends BaseController
             'title' => 'Account',
             'data_user' => $this->modelAuth->dataUser(),
         ];
-        return view('profile',$data);
+        return view('profile/profile',$data);
     }
     public function updateProfile($id){
         try {

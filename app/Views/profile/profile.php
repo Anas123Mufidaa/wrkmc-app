@@ -83,7 +83,7 @@
                                     </div>
                                     <div class="card-content">
                                         <div class="card-body">
-                                            <form action="<?= base_url('admin/profile/update-password') ?>" method="POST" class="form form-vertical" enctype="multipart/form-data">
+                                            <form action="<?= base_url('profile/update-password') ?>" method="POST" class="form form-vertical" enctype="multipart/form-data">
                                                 <?= csrf_field(); ?>
                                                 <input type="hidden" name="id_user" value="<?= $data_user['id_user']; ?>">
                                                 <div class="form-body">
