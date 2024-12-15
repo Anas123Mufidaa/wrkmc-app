@@ -43,5 +43,18 @@ class ModelAuth extends Model
         }
         
         return false; // Password lama salah
+    }    
+    public function adminUbahPassword($id, $password_lama, $password_baru){
+        // Ambil data pengguna berdasarkan id_user
+        $user = $this->find($id);
+
+        // Verifikasi password lama
+        if ($user && $password_lama === $user['password']) {
+            // Update password baru
+            $this->update($id, ['password' => sha1($password_baru)]);
+            return true; // Password berhasil diperbarui
+        }
+        
+        return false; // Password lama salah
     }
 }

@@ -21,6 +21,8 @@ $routes->group('profile', function ($routes) {
     $routes->post('update-profile/(:num)', 'Profile\Profile::updateProfile/$1');
     $routes->post('update-password', 'Profile\Profile::updatePassword');
 
-    $routes->get('/', 'Profile\Profile::index');
-
+    $routes->get('user', 'Profile\User::index');
+    $routes->post('user/save', 'Profile\User::save');
+    $routes->post('user/update-by/(:num)', 'Profile\User::updateBy/$1');
+    $routes->get('user/delete/(:segment)', 'Profile\User::delete/$1');
 });

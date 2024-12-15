@@ -32,12 +32,10 @@ class Profile extends BaseController
                 'foto_user' => [
                     'label' => 'Foto User',
                     'rules' => [
-                        'uploaded[foto_user]',
                         'mime_in[foto_user,image/jpg,image/jpeg,image/gif,image/png]',
                         'max_size[foto_user,5096]',   
                     ],
                     'errors' => [
-                        'uploaded' => '{field} harus diisi dulu',
                         'mime_in' => '{field} harus berupa image/jpg,image/jpeg,image/gif,image/png',
                         'max_size' => '{field} Maksimal 5 mb',
                     ]
@@ -66,9 +64,13 @@ class Profile extends BaseController
                 $foto = $foto_user->getName();
                 //pindahkan gambar
                 $foto_user->move('backEnd_template/assets/foto_user/', $foto);
+                 
+                $user = $this->modelAuth->find($id);
 
-                //hapus gambar lama digantii gambar baru
-                unlink('backEnd_template/assets/foto_user/' . $this->request->getVar('fotoUser_lama'));
+                if ($user['foto_user'] != 'foto_default.jpg') {
+                    //hapus gambar lama digantii gambar baru
+                    unlink('backEnd_template/assets/foto_user/' . $this->request->getVar('fotoUser_lama'));
+                }
             }
 
             $update = $this->modelAuth->update($id,[

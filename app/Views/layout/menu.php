@@ -26,6 +26,13 @@
                                 <i class="bi bi-person-badge text-primary <?= (uri_string() == 'profile') ? 'text-light' : ''; ?>"></i>
                                 <span >Account</span>
                             </a>
+                        </li>      
+                        <li class="sidebar-item <?= (uri_string() == 'profile/user') ? 'active' : ''; ?>">
+                            <a href="<?= base_url('profile/user') ?>" class="sidebar-link">
+                            
+                                <i class="bi bi-person-plus-fill text-primary <?= (uri_string() == 'profile/user') ? 'text-light' : ''; ?>"></i>
+                                <span>Tambah User</span>
+                            </a>
                         </li>                        
                         <li class="sidebar-item">
                             <a href="<?= base_url('auth/logout') ?>" class='sidebar-link'>
