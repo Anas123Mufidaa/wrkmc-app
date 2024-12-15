@@ -1,8 +1,8 @@
 <div class="sidebar-wrapper active bg-primary">
-<div class="sidebar-header">
+        <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo" >
-                            <a href="index.html" style="color:#FFC928;">Wrkmc-<span class="text-primary">App</span></a>
+                            <a href="<?= base_url('dashboard') ?>" style="color:#FFC928;">Wrkmc-<span class="text-primary">App</span></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
@@ -18,8 +18,28 @@
                                 <span>Dashboard</span>
                             </a>
                         </li>
+
+                        <li class="sidebar-title ">Data Master</li>
+
+                        <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'admin/home')) ? 'active' : ''; ?>  has-sub ">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-house-door-fill text-primary"></i>
+                                <span >Home</span>
+                            </a>
+                            <ul class="submenu <?=  (str_starts_with(uri_string(), 'admin/home')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item <?= (uri_string() == 'admin/home/slider') ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('admin/home/slider') ?>" class="submenu-link">Slider Image</a>
+                                </li>     
+                                <li class="submenu-item <?= (uri_string() == 'admin/home/galeri') ? 'active' : ''; ?> ">
+                                    <a href="<?= base_url('admin/home/galeri') ?>" class=" submenu-link">Galeri</a>
+                                </li>  
+                                <li class="submenu-item <?= (uri_string() == 'admin/home/tentang') ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('admin/home/tentang') ?>" class="submenu-link">Tentang Kami</a>  
+                                </li>
+                            </ul>
+                        </li> 
                          
-                        <li class="sidebar-title ">profile</li>
+                        <li class="sidebar-title ">Profile</li>
 
                         <li class="sidebar-item <?= (uri_string() == 'profile') ? 'active' : ''; ?>">
                             <a href="<?= base_url('profile') ?>" class="sidebar-link">
