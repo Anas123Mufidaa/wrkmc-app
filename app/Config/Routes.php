@@ -26,3 +26,13 @@ $routes->group('profile', function ($routes) {
     $routes->post('user/update-by/(:num)', 'Profile\User::updateBy/$1');
     $routes->get('user/delete/(:segment)', 'Profile\User::delete/$1');
 });
+$routes->group('sda', function ($routes) {
+    $routes->get('/', 'Sda\SumberDayaAir::index');
+    $routes->post('update-profile/(:num)', 'Sdas\SumberDayaAir::updateProfile/$1');
+    $routes->post('update-password', 'Sda\SumberDayaAir::updatePassword');
+
+    $routes->get('penilaian-kinerja', 'Sda\PenilaianKinerja::index');
+    $routes->post('penilaian-kinerja/save', 'Sda\PenilaianKinerja::save');
+    $routes->post('penilaian-kinerja/update-by/(:num)', 'Sda\PenilaianKinerja::updateBy/$1');
+    $routes->get('penilaian-kinerja/delete/(:segment)', 'Sda\PenilaianKinerja::delete/$1');
+});

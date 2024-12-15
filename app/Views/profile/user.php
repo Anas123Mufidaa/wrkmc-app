@@ -18,7 +18,7 @@
                         <div class="row">
                             <div class="col-md">
                                     <div class="card-body">
-                                        <button type="button" class="btn btn-primary block" data-bs-toggle="modal" data-bs-target="#modalTambah">
+                                        <button type="button" class="btn btn-primary block" data-bs-toggle="modal"  data-bs-target="#modalTambah">
                                             Tambah Data
                                         </button>                                
                                 </div>
@@ -117,7 +117,7 @@
                     <!--Tambah Data -->
                     <div class="modal fade text-left" id="modalTambah" tabindex="-1" role="dialog"
                             aria-labelledby="myModalLabel1" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-scrollable" role="document">
+                            <div class="modal-dialog modal-dialog-centered  modal-dialog-scrollable" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="myModalLabel1">Tambah Data <?= $title; ?></h5>

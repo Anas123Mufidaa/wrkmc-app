@@ -21,21 +21,18 @@
 
                         <li class="sidebar-title ">Data Master</li>
 
-                        <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'admin/home')) ? 'active' : ''; ?>  has-sub ">
+                        <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'sda')) ? 'active' : ''; ?>  has-sub ">
                             <a href="#" class="sidebar-link">
                                 <i class="bi bi-house-door-fill text-primary"></i>
-                                <span >Home</span>
+                                <span>Sumber Daya Air</span>
                             </a>
-                            <ul class="submenu <?=  (str_starts_with(uri_string(), 'admin/home')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
-                                <li class="submenu-item <?= (uri_string() == 'admin/home/slider') ? 'active' : ''; ?>">
-                                    <a href="<?= base_url('admin/home/slider') ?>" class="submenu-link">Slider Image</a>
+                            <ul class="submenu <?=  (str_starts_with(uri_string(), 'sda')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item <?= (uri_string() == 'sda') ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('sda') ?>" class="submenu-link">Tambah SDA </a>
                                 </li>     
-                                <li class="submenu-item <?= (uri_string() == 'admin/home/galeri') ? 'active' : ''; ?> ">
-                                    <a href="<?= base_url('admin/home/galeri') ?>" class=" submenu-link">Galeri</a>
+                                <li class="submenu-item <?= (uri_string() == 'sda/penilaian-kinerja') ? 'active' : ''; ?> ">
+                                    <a href="<?= base_url('sda/penilaian-kinerja') ?>" class=" submenu-link">Penilaian Kinerja</a>
                                 </li>  
-                                <li class="submenu-item <?= (uri_string() == 'admin/home/tentang') ? 'active' : ''; ?>">
-                                    <a href="<?= base_url('admin/home/tentang') ?>" class="submenu-link">Tentang Kami</a>  
-                                </li>
                             </ul>
                         </li> 
                          
