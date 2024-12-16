@@ -46,7 +46,7 @@
                                     <?php foreach ($data_sda as $key => $value) : ?>
                                     <tr>
                                         <td width ="50px" class="text-center"scope="row"><?= $i++; ?></td>
-                                        <td >
+                                        <td class="text-center" >
                                             <a href="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $value['gambar_sda']; ?>" data-lightbox="gallery" data-title="Gambar SDA">
                                                 <img width="70" height="70" src="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $value['gambar_sda']; ?>" alt="Gambar 1">
                                             </a>
