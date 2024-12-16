@@ -17,15 +17,21 @@
 
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/perfect-scrollbar/perfect-scrollbar.css">
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/bootstrap-icons/bootstrap-icons.css">
-     
+         
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.css" />
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/app.css">
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/mycss.css">
     <link rel="shortcut icon" href="<?= base_url('backEnd_template') ?>/assets/images/favicon.svg" type="image/x-icon">\
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <!-- notiflix -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-3.2.6.min.css" />
     <script src="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-3.2.6.min.js"></script>
+
+    <!-- CDN CSS untuk Dropify -->
+    <link href="https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css" rel="stylesheet">
+     <!-- CDN CSS untuk Lightbox -->
+     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -59,6 +65,13 @@
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/js/dropify.min.js"></script>
+     <!-- CDN JS untuk Lightbox -->
+     <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    
+
     <!-- my js -->
     <script src="<?= base_url('backEnd_template') ?>/assets/js/app.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/js/my.js"></script>

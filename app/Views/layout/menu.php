@@ -23,7 +23,7 @@
 
                         <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'sda')) ? 'active' : ''; ?>  has-sub ">
                             <a href="#" class="sidebar-link">
-                                <i class="bi bi-house-door-fill text-primary"></i>
+                                <i class="bi-droplet-half text-primary <?=  (str_starts_with(uri_string(), 'sda')) ? 'text-light' : ''; ?>"></i>
                                 <span>Sumber Daya Air</span>
                             </a>
                             <ul class="submenu <?=  (str_starts_with(uri_string(), 'sda')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     

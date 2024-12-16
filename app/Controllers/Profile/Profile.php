@@ -39,7 +39,6 @@ class Profile extends BaseController
                         'mime_in' => '{field} harus berupa image/jpg,image/jpeg,image/gif,image/png',
                         'max_size' => '{field} Maksimal 5 mb',
                     ]
-                 
                 ],
             ];
  

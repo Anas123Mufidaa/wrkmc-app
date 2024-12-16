@@ -28,8 +28,9 @@ $routes->group('profile', function ($routes) {
 });
 $routes->group('sda', function ($routes) {
     $routes->get('/', 'Sda\SumberDayaAir::index');
-    $routes->post('update-profile/(:num)', 'Sdas\SumberDayaAir::updateProfile/$1');
-    $routes->post('update-password', 'Sda\SumberDayaAir::updatePassword');
+    $routes->post('save', 'Sda\SumberDayaAir::save');
+    $routes->post('update-by/(:num)', 'Sda\SumberDayaAir::updateBy/$1');
+    $routes->get('delete/(:segment)', 'Sda\SumberDayaAir::delete/$1');
 
     $routes->get('penilaian-kinerja', 'Sda\PenilaianKinerja::index');
     $routes->post('penilaian-kinerja/save', 'Sda\PenilaianKinerja::save');
