@@ -23,6 +23,7 @@ class SumberDayaAir extends BaseController
     public function detail($id)
     {
         $data = [
+            'title' => 'Detail Sumber Daya Air',
             'detail_sda' => $this->modelSda->find($id),
         ];
         return view('sda/sumber-daya-air-detail' , $data);

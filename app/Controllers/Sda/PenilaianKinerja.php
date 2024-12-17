@@ -9,7 +9,7 @@ class PenilaianKinerja extends BaseController
     public function index()
     {
         $data = [
-            'title' => 'Data Penilaian Kinerja Sumber Daya Air',
+            'title' => 'Penilaian Kinerja Sumber Daya Air',
         ];
         return view('sda/penilaian-kinerja',$data);
     } 
