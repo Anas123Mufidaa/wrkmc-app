@@ -32,6 +32,11 @@
     <link href="https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css" rel="stylesheet">
      <!-- CDN CSS untuk Lightbox -->
      <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <style>
+        .dataTable-selector{
+            float:right;
+        }
+    </style>
 </head>
 
 <body>

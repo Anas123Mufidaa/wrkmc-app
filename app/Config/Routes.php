@@ -28,6 +28,7 @@ $routes->group('profile', function ($routes) {
 });
 $routes->group('sda', function ($routes) {
     $routes->get('/', 'Sda\SumberDayaAir::index');
+    $routes->get('detail/(:num)', 'Sda\SumberDayaAir::detail/$1');
     $routes->post('save', 'Sda\SumberDayaAir::save');
     $routes->post('update-by/(:num)', 'Sda\SumberDayaAir::updateBy/$1');
     $routes->get('delete/(:segment)', 'Sda\SumberDayaAir::delete/$1');

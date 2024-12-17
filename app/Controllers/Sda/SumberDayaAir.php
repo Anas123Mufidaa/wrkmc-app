@@ -19,6 +19,13 @@ class SumberDayaAir extends BaseController
             'data_sda' => $this->modelSda->getAllData(),
         ];
         return view('sda/sumber-daya-air',$data);
+    }    
+    public function detail($id)
+    {
+        $data = [
+            'detail_sda' => $this->modelSda->find($id),
+        ];
+        return view('sda/sumber-daya-air-detail' , $data);
     }
     public function save(){
         try {
