@@ -28,10 +28,10 @@
                             </a>
                             <ul class="submenu <?=  (str_starts_with(uri_string(), 'sda')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item <?= (uri_string() == 'sda') ? 'active' : ''; ?>">
-                                    <a href="<?= base_url('sda') ?>" class="submenu-link">Tambah SDA </a>
+                                    <a href="<?= base_url('sda') ?>" class="submenu-link">Data Teknis</a>
                                 </li>     
                                 <li class="submenu-item <?= (uri_string() == 'sda/penilaian-kinerja') ? 'active' : ''; ?> ">
-                                    <a href="<?= base_url('sda/penilaian-kinerja') ?>" class=" submenu-link">Penilaian Kinerja</a>
+                                    <a href="<?= base_url('sda/penilaian-kinerja') ?>" class=" submenu-link">Nilai Kinerja</a>
                                 </li>  
                             </ul>
                         </li> 

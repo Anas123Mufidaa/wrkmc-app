@@ -32,12 +32,12 @@
                                         <th class="text-center">Gambar SDA</th>
                                         <th class="text-center">Nama SDA</th>
                                         <th class="text-center">Jenis SDA</th>
-                                        <th class="text-center">User Created</th>
-                                        <th class="text-center">User Updated</th>
+                                        <!-- <th class="text-center">User Created</th> -->
+                                        <!-- <th class="text-center">User Updated</th> -->
                                         <th class="text-center">Alamat</th>
                                         <th class="text-center">Deskripsi SDA</th>
-                                        <!-- <th class="text-center">Created At</th>
-                                        <th class="text-center">Updated At</th> -->
+                                        <!-- <th class="text-center">Created At</th> -->
+                                        <th class="text-center">Updated At</th>
                                         <th class="text-center">Aksi</th>
                                     </tr>
                                 </thead>
@@ -53,12 +53,12 @@
                                         </td>
                                         <td class="text-center"><?= $value['nama_sda']; ?></td>
                                         <td class="text-center"><?= $value['jenis_sda']; ?></td>
-                                        <td class="text-center"><?= $value['created_by']; ?></td>
-                                        <td class="text-center"><?= $value['updated_by']; ?></td>
+                                        <!-- <td class="text-center"><?= $value['created_by']; ?></td>
+                                        <td class="text-center"><?= $value['updated_by']; ?></td> -->
                                         <td class="text-center"><?= $value['alamat']; ?></td>
                                         <td class="text-center"><?= $value['deskripsi_sda']; ?></td>
-                                        <!-- <td class="text-center"><?= $value['created_at']; ?></td>
-                                        <td class="text-center"><?= $value['updated_at']; ?></td> -->
+                                        <!-- <td class="text-center"><?= $value['created_at']; ?></td> -->
+                                        <td class="text-center"><?= $value['updated_at']; ?></td>
                                         <td width ="150px" class="text-center"> 
                                         <a type="button" data-bs-toggle="modal" data-bs-target="#editModal-<?= $value['id_sda'] ?>" class="btn btn-warning"> 
                                             <i class="bi bi-pencil-square"></i>
