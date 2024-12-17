@@ -11,7 +11,9 @@
             				<h4 class="text-right"><?= $detail_sda['nama_sda']; ?></h4>
             			</div>
             			<div class="card-body">
-            				<img style="min-height: 338px; width: 100%; display: block;" src="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_sda['gambar_sda']; ?>">
+                            <a href="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_sda['gambar_sda']; ?>" data-lightbox="gallery" data-title="Gambar SDA">
+                                <img style="min-height: 338px; width: 100%; display: block;" src="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_sda['gambar_sda']; ?>" alt="Gambar SDA">
+                            </a>
             			</div>
             		</div>
             	</div>
