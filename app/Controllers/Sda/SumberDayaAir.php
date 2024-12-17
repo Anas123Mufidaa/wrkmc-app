@@ -24,7 +24,7 @@ class SumberDayaAir extends BaseController
     {
         $data = [
             'title' => 'Detail Sumber Daya Air',
-            'detail_sda' => $this->modelSda->find($id),
+            'detail_sda' => $this->modelSda->getDetailData($id),
         ];
         return view('sda/sumber-daya-air-detail' , $data);
     }
@@ -165,21 +165,20 @@ class SumberDayaAir extends BaseController
        }
    }
    public function delete($id) {
-    try {
-        $delete = $this->modelSda->delete($id);
-        
-        if (!$delete) {
-             session()->setFlashdata('failed', 'Data Gagal Di hapus');
-             return redirect()->to(base_url('sda'));
-        }
-        else if ($delete) {
-             session()->setFlashdata('delete-success', 'Data Berhasil Di hapus');
-            return redirect()->to(base_url('sda'));
-        }
+        try {
+            $delete = $this->modelSda->delete($id);
+            
+            if (!$delete) {
+                session()->setFlashdata('failed', 'Data Gagal Di hapus');
+                return redirect()->to(base_url('sda'));
+            }
+            else if ($delete) {
+                session()->setFlashdata('delete-success', 'Data Berhasil Di hapus');
+                return redirect()->to(base_url('sda'));
+            }
 
-    } catch (\Exception $e) {
-        exit($e->getMessage());
+        } catch (\Exception $e) {
+            exit($e->getMessage());
+        }
     }
-}
-
 }

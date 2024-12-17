@@ -34,6 +34,7 @@ $routes->group('sda', function ($routes) {
     $routes->get('delete/(:segment)', 'Sda\SumberDayaAir::delete/$1');
 
     $routes->get('penilaian-kinerja', 'Sda\PenilaianKinerja::index');
+    $routes->get('penilaian-kinerja/detail/(:num)', 'Sda\PenilaianKinerja::detail/$1');
     $routes->post('penilaian-kinerja/save', 'Sda\PenilaianKinerja::save');
     $routes->post('penilaian-kinerja/update-by/(:num)', 'Sda\PenilaianKinerja::updateBy/$1');
     $routes->get('penilaian-kinerja/delete/(:segment)', 'Sda\PenilaianKinerja::delete/$1');

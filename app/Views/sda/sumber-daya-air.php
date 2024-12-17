@@ -29,14 +29,10 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th class="text-center">Gambar SDA</th>
                                         <th class="text-center">Nama SDA</th>
                                         <th class="text-center">Jenis SDA</th>
-                                        <!-- <th class="text-center">User Created</th> -->
-                                        <!-- <th class="text-center">User Updated</th> -->
                                         <th class="text-center">Alamat</th>
                                         <th class="text-center">Deskripsi SDA</th>
-                                        <!-- <th class="text-center">Created At</th> -->
                                         <th class="text-center">Updated At</th>
                                         <th class="text-center">Aksi</th>
                                     </tr>
@@ -46,18 +42,10 @@
                                     <?php foreach ($data_sda as $key => $value) : ?>
                                     <tr>
                                         <td width ="50px" class="text-center"scope="row"><?= $i++; ?></td>
-                                        <td class="text-center" >
-                                            <a href="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $value['gambar_sda']; ?>" data-lightbox="gallery" data-title="Gambar SDA">
-                                                <img width="70" height="70" src="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $value['gambar_sda']; ?>" alt="Gambar 1">
-                                            </a>
-                                        </td>
                                         <td class="text-center"><?= $value['nama_sda']; ?></td>
                                         <td class="text-center"><?= $value['jenis_sda']; ?></td>
-                                        <!-- <td class="text-center"><?= $value['created_by']; ?></td>
-                                        <td class="text-center"><?= $value['updated_by']; ?></td> -->
                                         <td class="text-center"><?= $value['alamat']; ?></td>
                                         <td class="text-center"><?= $value['deskripsi_sda']; ?></td>
-                                        <!-- <td class="text-center"><?= $value['created_at']; ?></td> -->
                                         <td class="text-center"><?= $value['updated_at']; ?></td>
                                         <td width ="160px" class="text-center"> 
                                         <a href="<?= base_url('sda/detail/'. $value['id_sda']);?>"" type="button" data-bs-toggle="modal" class="btn btn-primary"> 

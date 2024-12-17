@@ -11,13 +11,11 @@ body{
     padding:5rem 8rem
 }
 #auth #auth-left .auth-title{
-    font-size:4rem;
-    margin-bottom:1rem;
+    font-size:2rem;
     color: #364878;
 }
 .auth-title span{
-    font-size:4rem;
-    margin-bottom:1rem;
+    font-size:1.2rem;
     color: #FFC928;
 }
 #auth #auth-left .auth-subtitle{

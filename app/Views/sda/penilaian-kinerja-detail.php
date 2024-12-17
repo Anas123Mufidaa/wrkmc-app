@@ -10,11 +10,11 @@
                                     <div class="col-md-4">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h4 class="text-right"><?= $detail_sda['nama_sda']; ?></h4>
+                                                <h4 class="text-right"><?= $detail_penilaian['nama_sda']; ?></h4>
                                             </div>
                                             <div class="card-body">
-                                                <a href="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_sda['gambar_sda']; ?>" data-lightbox="gallery" data-title="Gambar SDA">
-                                                    <img style="min-height: 338px; width: 100%; display: block;" src="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_sda['gambar_sda']; ?>" alt="Gambar SDA">
+                                                <a href="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_penilaian['gambar_sda']; ?>" data-lightbox="gallery" data-title="Gambar SDA">
+                                                    <img style="min-height: 338px; width: 100%; display: block;" src="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_penilaian['gambar_sda']; ?>" alt="Gambar SDA">
                                                 </a>
                                             </div>
                                         </div>
@@ -29,49 +29,34 @@
                                                 <tr>
                                                     <td>Nama SDA</td>
                                                     <td>:</td>
-                                                    <td ><?= $detail_sda['nama_sda']; ?></td>
+                                                    <td ><?= $detail_penilaian['nama_sda']; ?></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Jenis SDA</td>
                                                     <td>:</td>
-                                                    <td><?= $detail_sda['jenis_sda']; ?></td>
+                                                    <td><?= $detail_penilaian['jenis_sda']; ?></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Alamat</td>
                                                     <td>:</td>
-                                                    <td><?= $detail_sda['alamat']; ?></td>
+                                                    <td><?= $detail_penilaian['alamat']; ?></td>
                                                 </tr>
                                                 <tr>
                                                     <td>Deskripsi SDA</td>
                                                     <td>:</td>
-                                                    <td><?= $detail_sda['deskripsi_sda']; ?></td>
+                                                    <td><?= $detail_penilaian['deskripsi_sda']; ?></td>
                                                 </tr>
-                                                <tr>
-                                                    <td>User Created</td>
-                                                    <td>:</td>
-                                                    <td><?= $detail_sda['created_by']; ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>User Updated</td>
-                                                    <td>:</td>
-                                                    <td><?= $detail_sda['updated_by']; ?></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Created At</td>
-                                                    <td>:</td>
-                                                    <td><?= $detail_sda['updated_at']; ?></td>
-                                                </tr>   
                                                 <tr>
                                                     <td>Updated At</td>
                                                     <td>:</td>
-                                                    <td><?= $detail_sda['updated_at']; ?></td>
+                                                    <td><?= $detail_penilaian['updated_at']; ?></td>
                                                 </tr>
                                             </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <a href="<?= base_url('sda') ?>" class="btn btn-danger"><i class="bi bi-box-arrow-in-left"></i> Kembali</a>
+                                <a href="<?= base_url('sda/penilaian-kinerja') ?>" class="btn btn-danger"><i class="bi bi-box-arrow-in-left"></i> Kembali</a>
                             </div>
                         </div>
                         </div>

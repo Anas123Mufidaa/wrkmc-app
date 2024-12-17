@@ -22,4 +22,13 @@ class ModelSda extends Model
                     ->join('user AS user_updated', 'user_updated.id_user = sda.user_updated', 'LEFT')
                     ->findAll();
     }
+
+    public function getDetailData($id){
+        return$this->select('sda.*, 
+                              user_created.nama_user AS created_by, 
+                              user_updated.nama_user AS updated_by')
+                    ->join('user AS user_created', 'user_created.id_user = sda.user_created', 'LEFT')
+                    ->join('user AS user_updated', 'user_updated.id_user = sda.user_updated', 'LEFT')
+                    ->find($id);                         
+    }
 }

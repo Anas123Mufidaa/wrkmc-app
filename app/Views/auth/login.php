@@ -22,8 +22,9 @@
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
                     <div class="auth-logo">
-                        <a href="index.html"><img style="width:100%;" src="<?= base_url('logo-wrkmc') ?>/WRKMC_-_APPS-backend.png" alt="Logo"></a>    
+                        <a href="index.html"><img src="<?= base_url('logo-wrkmc') ?>/Logo-PU.jpg" alt="Logo"></a>    
                     </div>
+                    <h6 class="auth-title">Login<span><br>Water Resource Knowledge Management Center</span></h6>
                         <?php
                             if (session()->get('error')) {
                                 echo "<div class= 'alert alert-light-danger color-danger' role='alert'>" . session()->get('error') . "</div>";
@@ -44,7 +45,7 @@
                             </div>
                         </div>
                         <button type="submit" class="btn btn-primary btn-block btn-lg shadow-lg mt-5">Login</button>
-                        <a href="<?= base_url('/') ?>" class="btn btn-danger btn-block btn-lg shadow-lg mt-2">Back To Home</a>
+                        <a href="<?= base_url('/') ?>" class="btn btn-warning btn-block btn-lg shadow-lg mt-2">Back To Home</a>
                     </form>
                 </div>
                 <div class="row mt-4">
