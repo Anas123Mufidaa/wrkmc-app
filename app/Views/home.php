@@ -24,7 +24,7 @@
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
          <a class="navbar-brand" href="#">
-           <img src="<?= base_url('logo-wrkmc') ?>/Logo-PU.jpg" alt="">
+           <img  src="<?= base_url('logo-wrkmc') ?>/WRKMC_-_APPS__1.png" alt="">
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <i class="fa fa-bars"></i>
@@ -32,7 +32,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mt-2">
-              <a class="nav-link" href="<?= base_url('/'); ?>">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="<?= base_url('/'); ?>">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="<?= base_url('auth/login'); ?>" ><button type="button" class="btn btn-outline-light">Login <i class="fa fa-sign-in"></i></button></a>
@@ -46,8 +46,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <p class="promo-title">WRKMC</p>
-            <p class="join-title">Join Us! We Will Let Grown Your Business Faster</p>
+            <p class="promo-title">Welcome to WRKMC Unit Center</p>
+            <p class="join-title"></p>
           </div>
             <div class="col-md-6">
               <img src="<?= base_url('logo-wrkmc') ?>/img_landing.png" alt="" class="img-fluid">
@@ -62,7 +62,9 @@
     <section id="services">
       <div class="container text-center">
         <h3 class="title text-center">ABOUT</h3>
-
+        <div style="width: 500px;height: 500px">
+          <canvas id="myChart"></canvas>
+        </div>
       </div>
     </section>
    
@@ -89,5 +91,6 @@
     <script>
 	    var scroll = new SmoothScroll('a[href*="#"]');
     </script>
+
   </body>
 </html>
