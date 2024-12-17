@@ -22,9 +22,8 @@
             <div class="col-lg-5 col-12">
                 <div id="auth-left">
                     <div class="auth-logo">
-                        <a href="index.html"><img src="<?= base_url('logo-wrkmc') ?>/Logo-PU.jpg" alt="Logo"></a>    
+                        <a href="index.html"><img style="width:100%;" src="<?= base_url('logo-wrkmc') ?>/WRKMC_-_APPS-backend.png" alt="Logo"></a>    
                     </div>
-                    <h6 class="auth-title">Wrkmc <span>Apps</span></h6>
                         <?php
                             if (session()->get('error')) {
                                 echo "<div class= 'alert alert-light-danger color-danger' role='alert'>" . session()->get('error') . "</div>";

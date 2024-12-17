@@ -2,7 +2,7 @@
         <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo" >
-                            <a href="<?= base_url('dashboard') ?>" style="color:#FFC928;">Wrkmc-<span class="text-primary">App</span></a>
+                            <a href="<?= base_url('dashboard') ?>" ><img style="min-height:70px;" src="<?= base_url('logo-wrkmc') ?>/WRKMC_-_APPS-backend.png" alt=""></a>
                         </div>
                         <div class="toggler">
                             <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
