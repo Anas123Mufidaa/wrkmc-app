@@ -61,14 +61,14 @@
     </section>
 
     <!--- Services ---->
-    <section id="services">
+    <!-- <section id="services">
       <div class="container text-center">
         <h3 class="title text-center">ABOUT</h3>
         <div style="width: 500px;height: 500px">
         
         </div>
       </div>
-    </section>
+    </section> -->
     <canvas id="lineChart" style="width: 100%;height: 500px"></canvas>
    
     <!-- Footer ------>
