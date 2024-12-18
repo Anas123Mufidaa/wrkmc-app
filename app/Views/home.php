@@ -26,7 +26,7 @@
     <section id="nav-bar">
       <nav class="navbar navbar-expand-lg navbar-light">
          <a class="navbar-brand" href="#">
-           <img  src="<?= base_url('logo-wrkmc') ?>/WRKMC_-_APPS__1.png" alt="">
+           <img  src="<?= base_url('logo-wrkmc') ?>/WRKMC-APPS-frontend.png" alt="">
          </a>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
            <i class="fa fa-bars"></i>
@@ -34,7 +34,10 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mt-2">
-              <a class="nav-link" href="<?= base_url('/'); ?>">Home</a>
+              <a class="nav-link" href="#top">Home</a>
+            </li>  
+            <li class="nav-item mt-2">
+              <a class="nav-link" href="#grafik">Grafik</a>
             </li>
             <li class="nav-item">
               <a class="nav-link " href="<?= base_url('auth/login'); ?>" ><button type="button" class="btn btn-outline-light">Login <i class="fa fa-sign-in"></i></button></a>
@@ -69,7 +72,15 @@
         </div>
       </div>
     </section> -->
-    <canvas id="lineChart" class="mb-5 mt-5" style="width:100%;height: 600px"></canvas>
+    <div class="row" id="grafik">
+      <div class="col">
+        <canvas id="lineChart" class="mb-5 mt-5" style="width:200px;height: 100px"></canvas>
+          
+      </div>
+      <div class="col">
+      <!-- <canvas id="radarChart" class="mb-5 mt-5" style="width:150px;height: 30px"></canvas> -->
+      </div>
+    </div>
    
     <!-- Footer ------>
     <section id="footer">
@@ -142,9 +153,54 @@
                             text: 'Rata-Rata Nilai Kinerja'
                         }
                     }
+                  }
+              }
+          });
+
+          const dataRadar = {
+              labels: [
+                'Eating',
+                'Drinking',
+                'Sleeping',
+                'Designing',
+                'Coding',
+                'Cycling',
+                'Running'
+              ],
+              datasets: [{
+                label: 'My First Dataset',
+                data: [65, 59, 90, 81, 56, 55, 40],
+                fill: true,
+                backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                borderColor: 'rgb(255, 99, 132)',
+                pointBackgroundColor: 'rgb(255, 99, 132)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(255, 99, 132)'
+              }, {
+                label: 'My Second Dataset',
+                data: [28, 48, 40, 19, 96, 27, 100],
+                fill: true,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgb(54, 162, 235)',
+                pointBackgroundColor: 'rgb(54, 162, 235)',
+                pointBorderColor: '#fff',
+                pointHoverBackgroundColor: '#fff',
+                pointHoverBorderColor: 'rgb(54, 162, 235)'
+              }]
+            };
+          const ctx2 = document.getElementById('radarChart').getContext('2d');
+          new Chart(ctx2,{
+            type: 'radar',
+            data: dataRadar,
+            options: {
+              elements: {
+                line: {
+                  borderWidth: 3
                 }
-            }
-        });
+              }
+            },
+          });
     </script>
 
     <!--- Smooth Scroll js ---------->

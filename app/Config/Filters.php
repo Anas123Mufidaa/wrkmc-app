@@ -108,6 +108,7 @@ class Filters extends BaseFilters
     public array $filters = [
         'filterUser' => [
             'before' => [
+                '/',
                 'dashboard',
                 'dashboard/*',
                 'profile',
