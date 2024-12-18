@@ -18,6 +18,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?= base_url('frontEnd_template') ?>/images/ico/apple-touch-icon-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?= base_url('frontEnd_template') ?>/images/ico/apple-touch-icon-72.png">
     <link rel="apple-touch-icon-precomposed" href="<?= base_url('frontEnd_template') ?>/images/ico/apple-touch-icon-57.png">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
     <!-- Navbar Menu  ---->
@@ -63,10 +65,11 @@
       <div class="container text-center">
         <h3 class="title text-center">ABOUT</h3>
         <div style="width: 500px;height: 500px">
-          <canvas id="myChart"></canvas>
+        
         </div>
       </div>
     </section>
+    <canvas id="lineChart" style="width: 100%;height: 500px"></canvas>
    
     <!-- Footer ------>
     <section id="footer">
@@ -86,6 +89,64 @@
           <br>
         </div>
     </section>
+    <script>
+        const ctx = document.getElementById('lineChart').getContext('2d');
+        const data = <?= json_encode($data) ?>;
+        const tahunRange = <?= json_encode($tahun_range) ?>;
+
+        const colors = {
+            "sungai": "#FF5733",    // Warna Sungai
+            "danau": "#33FF57",     // Warna Danau
+            "pantai": "#3357FF",    // Warna Pantai
+            "embung": "#FF33A6"     // Warna Embung
+        };
+
+        const datasets = [];
+        Object.keys(data).forEach((jenis) => {
+            datasets.push({
+                label: jenis,
+                data: tahunRange.map((tahun) => data[jenis][tahun] || 0), // Nilai 0 jika data tidak ada
+                borderColor: colors[jenis], // Warna sesuai kategori
+                backgroundColor: colors[jenis], // Warna isi (jika area fill diaktifkan)
+                fill: false, // Tidak ada fill area di bawah garis
+                tension: 0.1
+            });
+        });
+
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: tahunRange, // Tahun pada sumbu X
+                datasets: datasets
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Grafik Rata-Rata Penilaian SDA Berdasarkan Jenis dan Tahun'
+                    }
+                },
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Tahun'
+                        }
+                    },
+                    y: {
+                        min: 0,
+                        max: 100, // Batas nilai pada sumbu Y
+                        title: {
+                            display: true,
+                            text: 'Rata-Rata Nilai Kinerja'
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
     <!--- Smooth Scroll js ---------->
     <script type="text/javascript" src="js/smooth-scroll.js"></script>
     <script>
