@@ -64,7 +64,7 @@
                                 <!--Edit Data -->
                                 <div class="modal fade text-left edit-modal"  id="editModal-<?= $value['id_penilaian'] ?>" tabindex="-1" role="dialog"
                                             aria-labelledby="myModalLabel1" aria-hidden="true">
-                                            <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+                                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable " role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
                                                         <h5 class="modal-title" id="myModalLabel1">Edit Data <?= $title; ?></h5>
@@ -94,8 +94,10 @@
                                                         <input type="date" name="tanggal_penilaian" class="form-control" style="height:50px;width:100%;" value="<?= $value['tanggal_penilaian']; ?>"></input>
                                                     </div>
                                                     <div class="form-group" style="font-weight: bold;">
-                                                        <label for="nilai_kinerja">Nilai Kinerja</label>
-                                                        <input type="text" name="nilai_kinerja" class="form-control" style="height:50px;width:100%;" value="<?= $value['nilai_kinerja']; ?>"></input>
+                                                        <label for="nilai_kinerja">Nilai Kinerja : </label>
+                                                        <span id="nilaiOutputEdit_<?= $value['id_penilaian']; ?>" class="text-xl text-center font-semibold text-gray-800"><?= ($value['nilai_kinerja']); ?></span>
+                                                        <input type="range"  id="nilaiEdit" name="nilai_kinerja" min="0" max="100" value="<?= $value['nilai_kinerja']; ?>" class="w-full" 
+                                                        style="width:100%;" oninput="document.getElementById('nilaiOutputEdit_<?= $value['id_penilaian']; ?>').textContent = this.value;">
                                                     </div> 
                                                     <div class="form-group" style="font-weight: bold;">
                                                         <label for="catatan_penilaian">Catatan Penilaian</label>
@@ -149,7 +151,7 @@
                     <!--Tambah Data -->
                     <div class="modal fade text-left" id="modalTambah" tabindex="-1" role="dialog"
                             aria-labelledby="myModalLabel1" aria-hidden="true">
-                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg" role="document">
+                            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
                                 <div class="modal-content">
                                     <div class="modal-header">
                                         <h5 class="modal-title" id="myModalLabel1">Tambah Data <?= $title; ?></h5>
@@ -173,8 +175,10 @@
                                         <input type="date" name="tanggal_penilaian" class="form-control" style="height:50px;width:100%;"></input>
                                     </div>
                                     <div class="form-group" style="font-weight: bold;">
-                                        <label for="nilai_kinerja">Nilai Kinerja</label>
-                                        <input type="text" name="nilai_kinerja" class="form-control" style="height:50px;width:100%;"></input>
+                                        <label for="nilai_kinerja">Nilai Kinerja : </label>
+                                        <span id="nilaiOutput" class="text-xl text-center font-semibold text-gray-800">50</span>
+                                        <input type="range"  id="nilai" name="nilai_kinerja" min="0" max="100" value="50" class="w-full" 
+                                        style="width:100%;" oninput="nilaiOutput.textContent = this.value">
                                     </div> 
                                     <div class="form-group" style="font-weight: bold;">
                                         <label for="catatan_penilaian">Catatan Penilaian</label>

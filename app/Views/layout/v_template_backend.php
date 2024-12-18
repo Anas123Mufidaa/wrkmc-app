@@ -36,6 +36,9 @@
         .dataTable-selector{
             float:right;
         }
+        #nilaiOutputEdit {
+            visibility: visible !important;
+        }
     </style>
 </head>
 
