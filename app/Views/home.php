@@ -69,7 +69,7 @@
         </div>
       </div>
     </section> -->
-    <canvas id="lineChart" style="width: 100%;height: 500px"></canvas>
+    <canvas id="lineChart" style="width:100%;height: 600px"></canvas>
    
     <!-- Footer ------>
     <section id="footer">
