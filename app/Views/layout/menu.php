@@ -28,10 +28,24 @@
                             </a>
                             <ul class="submenu <?=  (str_starts_with(uri_string(), 'sda')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item <?= (uri_string() == 'sda') ? 'active' : ''; ?>">
-                                    <a href="<?= base_url('sda') ?>" class="submenu-link">Data Teknis</a>
+                                    <a href="<?= base_url('sda') ?>" class="submenu-link">Data SDA</a>
                                 </li>     
                                 <li class="submenu-item <?= (uri_string() == 'sda/penilaian-kinerja') ? 'active' : ''; ?> ">
                                     <a href="<?= base_url('sda/penilaian-kinerja') ?>" class=" submenu-link">Nilai Kinerja</a>
+                                </li>  
+                            </ul>
+                        </li>                         
+                        <li class="sidebar-item  has-sub ">
+                            <a href="#" class="sidebar-link">
+                                <i class="fa fa-ambulance text-primary "></i>
+                                <span>Bencana</span>
+                            </a>
+                            <ul class="submenu  submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item ">
+                                    <a href="#" class="submenu-link">Data Bencana</a>
+                                </li>     
+                                <li class="submenu-item  ">
+                                    <a href="#" class=" submenu-link">Monitoring</a>
                                 </li>  
                             </ul>
                         </li> 

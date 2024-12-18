@@ -3,7 +3,7 @@
 
 <section class="section">
                         <div class="page-heading">
-                            <h2 class="mb-0 lh-sm"><span class="bi bi-droplet-half text-primary" style="height: 35px; width: 60px;"></span> Manajemen Data <?= $title ?></h2>
+                            <h2 class="mb-0 lh-sm"><span class="bi bi-droplet-half text-primary" style="height: 35px; width: 60px;"></span>Data <?= $title ?></h2>
                         </div>
                 <div class="card">
                         <div class="row">
