@@ -33,6 +33,10 @@
     <link href="https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css" rel="stylesheet">
      <!-- CDN CSS untuk Lightbox -->
      <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- datatable -->
+     <link href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" rel="stylesheet">
+     <link href="https://cdn.datatables.net/fixedcolumns/5.0.4/css/fixedColumns.dataTables.css" rel="stylesheet">
+ 
     <style>
         .dataTable-selector{
             float:right;
@@ -40,6 +44,7 @@
         #nilaiOutputEdit {
             visibility: visible !important;
         }
+        
     </style>
 </head>
 
@@ -79,6 +84,12 @@
     <script src="https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/js/dropify.min.js"></script>
      <!-- CDN JS untuk Lightbox -->
      <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
+    <!-- datatable -->
+     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
+     <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/dataTables.fixedColumns.js"></script>
+     <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/fixedColumns.dataTables.js"></script>
+
     
 
     <!-- my js -->

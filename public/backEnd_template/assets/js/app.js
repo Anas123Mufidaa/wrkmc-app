@@ -1,6 +1,22 @@
-let dataTable = new simpleDatatables.DataTable(
-    document.getElementById("table1")
-  )
+// let dataTable = new simpleDatatables.DataTable(
+//     document.getElementById("table1")
+//   )
+// let dataTable = new simpleDatatables.DataTable(document.getElementById("table1"), {
+//   fixedColumns: {
+//     left: 1, // Kolom kedua difreeze dari kiri
+//     right: 1  
+//   }
+// });
+new DataTable('#table1', {
+  fixedColumns: {
+      start: 2,
+      end: 1
+  },
+  paging: true,
+  scrollCollapse: true,
+  scrollX: true,
+});
+  
 
   // Move "per page dropdown" selector element out of label
   // to make it work with bootstrap 5. Add bs5 classes.
