@@ -21,11 +21,4 @@ class ModelBencana extends Model
                     ->join('user AS user_created', 'user_created.id_user = bencana.user_created', 'LEFT')
                     ->findAll();
     }
-
-    public function getDetailData($id){
-        return$this->select('bencana.*, 
-                              user_created.nama_user AS created_by')
-                    ->join('user AS user_created', 'bencana.id_user = bencana.user_created', 'LEFT')
-                    ->find($id);                         
-    }
 }

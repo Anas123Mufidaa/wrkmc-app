@@ -48,7 +48,7 @@
                                         <td class="text-center"><?= $value['deskripsi_sda']; ?></td>
                                         <td class="text-center"><?= $value['updated_at']; ?></td>
                                         <td width ="160px" class="text-center"> 
-                                        <a href="<?= base_url('sda/detail/'. $value['id_sda']);?>"" type="button" data-bs-toggle="modal" class="btn btn-primary"> 
+                                        <a href="<?= base_url('sda/detail/'. $value['id_sda']);?>" type="button" data-bs-toggle="modal" class="btn btn-primary"> 
                                             <i class="bi bi-info-circle-fill"></i>
                                         </a>   
                                         <a type="button" data-bs-toggle="modal" data-bs-target="#editModal-<?= $value['id_sda'] ?>" class="btn btn-warning"> 

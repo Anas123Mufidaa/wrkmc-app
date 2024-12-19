@@ -64,10 +64,7 @@
                                         <td class="text-center"><?= $value['tebusan']; ?></td>
                                         <td class="text-center" style="white-space: nowrap;"><?= $value['updated_at']; ?></td>
                                         <td width ="200px"style="white-space: nowrap;" class="text-center"> 
-                                        <!-- <a href="<?= base_url('sda/penilaian-kinerja/detail/'. $value['id_bencana']);?>"" type="button" data-bs-toggle="modal" class="btn btn-primary"> 
-                                            <i class="bi bi-info-circle-fill"></i>
-                                        </a>    -->
-                                        <a type="button" data-bs-toggle="modal" data-bs-target="#editModal-<?= $value['id_bencana'] ?>" class="btn btn-warning"> 
+                                        <a href="<?= base_url('bencana/edit/'. $value['id_bencana']);?>" type="button"  class="btn btn-warning"> 
                                             <i class="bi bi-pencil-square"></i>
                                         </a>
                                         <a type="button" class="btn btn-danger btn-hapus" data-bs-toggle="modal" data-bs-target="#modal-delete-<?= $value['id_bencana']?>">
@@ -93,7 +90,7 @@
                                                         <span class="d-none d-sm-block">Batal</span>    
                                                     </button> 
                                                     
-                                                    <a href="penilaian-kinerja/delete/<?=$value['id_bencana'];?>" class="btn btn-danger">
+                                                    <a href="bencana/delete/<?=$value['id_bencana'];?>" class="btn btn-danger">
                                                         <i class="bx bx-check d-block d-sm-none"></i>
                                                         <span class="d-none d-sm-block">Hapus</span>
                                                     </a>   
