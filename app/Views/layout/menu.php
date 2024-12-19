@@ -35,14 +35,14 @@
                                 </li>  
                             </ul>
                         </li>                         
-                        <li class="sidebar-item  has-sub ">
+                        <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'bencana')) ? 'active' : ''; ?>   has-sub ">
                             <a href="#" class="sidebar-link">
-                                <i class="fa fa-ambulance text-primary "></i>
+                                <i class="bi bi-exclamation-triangle-fill text-primary <?=  (str_starts_with(uri_string(), 'bencana')) ? 'text-light' : ''; ?>"></i>
                                 <span>Bencana</span>
                             </a>
-                            <ul class="submenu  submenu-open" style="--submenu-height: 172px;">     
-                                <li class="submenu-item ">
-                                    <a href="#" class="submenu-link">Data Bencana</a>
+                            <ul class="submenu <?=  (str_starts_with(uri_string(), 'bencana')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item <?= (uri_string() == 'bencana') ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('bencana') ?>" class="submenu-link">Data Bencana</a>
                                 </li>     
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">Monitoring</a>

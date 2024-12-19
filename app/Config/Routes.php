@@ -39,3 +39,11 @@ $routes->group('sda', function ($routes) {
     $routes->post('penilaian-kinerja/update-by/(:num)', 'Sda\PenilaianKinerja::updateBy/$1');
     $routes->get('penilaian-kinerja/delete/(:segment)', 'Sda\PenilaianKinerja::delete/$1');
 });
+$routes->group('bencana', function ($routes) {
+    $routes->get('/', 'Bencana\Bencana::index');
+    $routes->get('create', 'Bencana\Bencana::create');
+    $routes->post('save', 'Bencana\Bencana::save');
+    $routes->get('edit/(:num)', 'Bencana\Bencana::edit/$1');
+    $routes->post('update-by/(:num)', 'Bencana\Bencana::updateBy/$1');
+    $routes->get('delete/(:segment)', 'Bencana\Bencana::delete/$1');
+});

@@ -17,8 +17,8 @@ class Home extends BaseController
     public function index()
     {
         // Tahun awal dan akhir
-        $tahun_awal = 2019;
         $tahun_akhir = date('Y'); // Tahun saat ini
+        $tahun_awal  = $tahun_akhir - 5;
         $tahun_range = range($tahun_awal, $tahun_akhir);
 
         $query = $this->modelPenilaian
