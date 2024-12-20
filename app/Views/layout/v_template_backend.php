@@ -37,6 +37,11 @@
      <link href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" rel="stylesheet">
      <link href="https://cdn.datatables.net/fixedcolumns/5.0.4/css/fixedColumns.dataTables.css" rel="stylesheet">
  
+
+     <link href="https://cdn.jsdelivr.net/npm/quill/dist/quill.snow.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/quill/dist/quill.min.js"></script>
+
+
     <style>
         .dataTable-selector{
             float:right;
@@ -60,7 +65,7 @@
         </div>
         <footer>
             <div class="footer clearfix mb-0 text-muted">
-                <p>Created By &copy; by Anas Mufida 2024 &mdash;</p>
+                <p>Developed By &copy; Anas Mufida 2024 &mdash;</p>
             </div>
         </footer>
     </div>
@@ -89,8 +94,6 @@
      <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
      <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/dataTables.fixedColumns.js"></script>
      <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/fixedColumns.dataTables.js"></script>
-
-    
 
     <!-- my js -->
     <script src="<?= base_url('backEnd_template') ?>/assets/js/app.js"></script>

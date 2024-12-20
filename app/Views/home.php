@@ -63,22 +63,19 @@
         <img src="<?= base_url('frontEnd_template') ?>/images/ground@-min.png" class="bottom-img" alt="">
     </section>
 
-    <!--- Services ---->
-    <!-- <section id="services">
+    <!-- - Grafik ---->
+    <section id="grafik">
       <div class="container text-center">
-        <h3 class="title text-center">ABOUT</h3>
-        <div style="width: 500px;height: 500px">
-        
-        </div>
+        <h3 class="title text-center">Grafik</h3>
       </div>
-    </section> -->
-    <div class="row" id="grafik">
+    </section>
+    <div class="row">
       <div class="col">
         <canvas id="lineChart" class="mb-5 mt-5" style="width:200px;height: 100px"></canvas>
           
       </div>
       <div class="col">
-      <!-- <canvas id="radarChart" class="mb-5 mt-5" style="width:150px;height: 30px"></canvas> -->
+      <canvas id="bencanaChart" class="mb-5 mt-5" style="width :200px;height: 10px"></canvas>
       </div>
     </div>
    
@@ -94,7 +91,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div class="col-md-12">
-              <p class="copyright">Created By &copy; by Anas Mufida 2024 &mdash;</p>
+              <p class="copyright">Developed By &copy; Anas Mufida 2024 &mdash;</p>
             </div>
           </div>
           <br>
@@ -156,52 +153,53 @@
                   }
               }
           });
+          // Grafik Bencana
+          const ctx2 = document.getElementById('bencanaChart').getContext('2d');
 
-          const dataRadar = {
-              labels: [
-                'Eating',
-                'Drinking',
-                'Sleeping',
-                'Designing',
-                'Coding',
-                'Cycling',
-                'Running'
-              ],
+          const dataBencana = {
+            labels: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'],
               datasets: [{
-                label: 'My First Dataset',
-                data: [65, 59, 90, 81, 56, 55, 40],
-                fill: true,
-                backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                borderColor: 'rgb(255, 99, 132)',
-                pointBackgroundColor: 'rgb(255, 99, 132)',
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(255, 99, 132)'
-              }, {
-                label: 'My Second Dataset',
-                data: [28, 48, 40, 19, 96, 27, 100],
-                fill: true,
-                backgroundColor: 'rgba(54, 162, 235, 0.2)',
-                borderColor: 'rgb(54, 162, 235)',
-                pointBackgroundColor: 'rgb(54, 162, 235)',
-                pointBorderColor: '#fff',
-                pointHoverBackgroundColor: '#fff',
-                pointHoverBorderColor: 'rgb(54, 162, 235)'
+                  label: 'Jumlah Bencana',
+                  data: <?= json_encode($grafik_bencana) ?>,
+                  backgroundColor: 'rgba(250, 0, 0, 0.2)',
+                  borderColor: 'rgb(235, 54, 54)',
+                  borderWidth: 1,
+                  maxBarThickness: 50 // Batasi lebar batang
               }]
-            };
-          const ctx2 = document.getElementById('radarChart').getContext('2d');
-          new Chart(ctx2,{
-            type: 'radar',
-            data: dataRadar,
-            options: {
-              elements: {
-                line: {
-                  borderWidth: 3
-                }
+          };
+
+          new Chart(ctx2, {
+              type: 'bar',
+              data: dataBencana,
+              options: {
+                  responsive: true,
+                  maintainAspectRatio: false, // Supaya tinggi tetap
+                  plugins: {
+                      title: {
+                          display: true,
+                          text: 'Jumlah Bencana per Bulan Di tahun <?= date('Y') ?>'
+                      }
+                  },
+                  scales: {
+                      y: {
+                          beginAtZero: true,
+                          title: {
+                              display: true,
+                              text: 'Jumlah Bencana'
+                          }
+                      },
+                      x: {
+                          title: {
+                              display: true,
+                              text: 'Bulan'
+                          }
+                      }
+                  }
               }
-            },
           });
     </script>
+    
+
 
     <!--- Smooth Scroll js ---------->
     <script type="text/javascript" src="js/smooth-scroll.js"></script>

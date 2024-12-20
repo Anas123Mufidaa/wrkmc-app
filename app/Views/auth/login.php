@@ -50,7 +50,7 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-12 text-center">
-                        <p>Created By &copy; by Anas Mufida 2024 &mdash;</p>
+                        <p>Developed By &copy; Anas Mufida 2024 &mdash;</p>
                     </div>
                 </div>
             </div>

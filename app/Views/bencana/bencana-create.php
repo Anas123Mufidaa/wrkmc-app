@@ -113,15 +113,26 @@
                                                                 <label for="usulan"><b>Usulan :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
-                                                                <textarea class="form-control" type="text" name="usulan"></textarea>
+                                                                <textarea class="form-control" type="text" name="usulan" placeholder="contoh"></textarea>
                                                             </div>
                                                             
                                                             <div class="col-md-4">
                                                                 <label for="tebusan"><b>Tebusan :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
-                                                                <textarea class="form-control" type="text" name="tebusan"></textarea>
+                                                                <textarea class="form-control" type="text" name="tebusan" rows="3"></textarea>
                                                             </div>
+
+                                                            <!-- tinymce quill -->
+                                                            <!-- <div class="card">
+                                                            <div class="card-header">
+                                                                <h4 class="card-title">Full Editor</h4>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <p>Block some text to display options in poppovers </p>
+                                                                <div id="quill-editor" style="height: 200px;"></div>
+                                                                <textarea name="tebusan" id="quill-content" placeholder="contoh" value="hdahahdkasjhdjk" hidden ></textarea>
+                                                            </div> -->
                                                         <div class="col-12 d-flex justify-content-end mt-3">
                                                             <button type="button" class="btn btn-light-secondary me-1 mb-1 prev-step">Previous</button>
                                                             <button type="submit" class="btn btn-primary me-1 mb-1 ">Submit</button>
@@ -139,4 +150,14 @@
                     <a href="<?= base_url('bencana') ?>" class="btn btn-danger"><i class="bi bi-box-arrow-in-left"></i> Kembali</a>
                 </div>
             </section>
+            <!-- <script>
+                var quill = new Quill('#quill-editor', {
+                    theme: 'snow'
+                });
+
+                // Sinkronisasi isi Quill ke textarea
+                document.querySelector('form').onsubmit = function() {
+                    document.querySelector('#quill-content').value = quill.root.innerHTML;
+                };
+            </script> -->
 <?= $this->endSection() ?>  
