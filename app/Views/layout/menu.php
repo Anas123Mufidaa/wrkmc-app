@@ -10,7 +10,7 @@
                     </div>
                 </div>
                 <div class="sidebar-menu">
-                    <ul class="menu">
+                    <ul class="menu w-auto ">
 
                         <li class="sidebar-item <?= (uri_string() == 'dashboard') ? 'active' : ''; ?>">
                             <a href="<?= base_url('dashboard') ?>" class="sidebar-link">
@@ -32,9 +32,29 @@
                                 </li>     
                                 <li class="submenu-item <?= (uri_string() == 'sda/penilaian-kinerja') ? 'active' : ''; ?> ">
                                     <a href="<?= base_url('sda/penilaian-kinerja') ?>" class=" submenu-link">Nilai Kinerja</a>
+                                </li>
+                                <li class="submenu-item ">
+                                    <a href="#" class="submenu-link">Laporan SDA
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>    
+                            </ul>
+                        </li>
+                         
+                        <li class="sidebar-item has-sub ">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-sliders text-primary"></i>
+                                <span>P3A</span>
+                            </a>
+                            <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item ">
+                                    <a href="#" class="submenu-link">Data P3A
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
                                 </li>  
                             </ul>
-                        </li>                         
+                        </li> 
+                        
                         <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'bencana')) ? 'active' : ''; ?>   has-sub ">
                             <a href="#" class="sidebar-link">
                                 <i class="bi bi-exclamation-triangle-fill text-primary <?=  (str_starts_with(uri_string(), 'bencana')) ? 'text-light' : ''; ?>"></i>
@@ -45,7 +65,77 @@
                                     <a href="<?= base_url('bencana') ?>" class="submenu-link">Data Bencana</a>
                                 </li>     
                                 <li class="submenu-item  ">
-                                    <a href="#" class=" submenu-link">Monitoring</a>
+                                    <a href="#" class=" submenu-link">
+                                        Laporan Bencana
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>   
+                                <li class="submenu-item  ">
+                                    <a href="#" class=" submenu-link">Satgas Bencana
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>  
+                            </ul>
+                        </li>       
+
+                        <li class="sidebar-item has-sub ">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-map-fill text-primary"></i>
+                                <span>Arsip Peta</span>
+                            </a>
+                            <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item ">
+                                    <a href="#" class="submenu-link">Data Peta
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>     
+                                <li class="submenu-item  ">
+                                    <a href="#" class=" submenu-link">Arsip
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>  
+                            </ul>
+                        </li>      
+                        
+                        <li class="sidebar-item has-sub ">
+                            <a href="#" class="sidebar-link">
+                                <i class="fa fa-desktop text-primary"></i>
+                                <span>Monitoring</span>
+                            </a>
+                            <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item ">
+                                    <a href="#" class="submenu-link">Screen
+                                      <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>     
+                                <li class="submenu-item  ">
+                                    <a href="#" class=" submenu-link">Kinerja SDA
+                                       <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>  
+                                <li class="submenu-item  ">
+                                    <a href="#" class=" submenu-link">P3A
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>  
+                                <li class="submenu-item  ">
+                                    <a href="#" class=" submenu-link">Bencana
+                                        <span class="badge bg-light-danger">soon</span>
+                                    </a>
+                                </li>  
+                            </ul>
+                        </li>          
+                        
+                        <li class="sidebar-item has-sub ">
+                            <a href="#" class="sidebar-link">
+                                <i class="bi bi-cpu text-primary"></i>
+                                <span>AI</span>
+                            </a>
+                            <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
+                                <li class="submenu-item ">
+                                    <a href="#" class="submenu-link">Unit Center Assistant
+                                    <span class="badge bg-light-danger">soon</span>
+                                    </a>
                                 </li>  
                             </ul>
                         </li> 
