@@ -57,4 +57,10 @@ class ModelAuth extends Model
         
         return false; // Password lama salah
     }
+
+    public function countUser(){
+        return $this->db->table('user')->select('COUNT(*) as total_user')
+               ->get()->getRowArray();
+    }
+        
 }

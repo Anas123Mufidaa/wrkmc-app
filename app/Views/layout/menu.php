@@ -35,7 +35,7 @@
                                 </li>
                                 <li class="submenu-item ">
                                     <a href="#" class="submenu-link">Laporan SDA
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>    
                             </ul>
@@ -49,7 +49,7 @@
                             <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item ">
                                     <a href="#" class="submenu-link">Data P3A
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                             </ul>
@@ -67,12 +67,12 @@
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">
                                         Laporan Bencana
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>   
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">Satgas Bencana
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                             </ul>
@@ -86,12 +86,12 @@
                             <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item ">
                                     <a href="#" class="submenu-link">Data Peta
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>     
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">Arsip
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                             </ul>
@@ -105,22 +105,22 @@
                             <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item ">
                                     <a href="#" class="submenu-link">Screen
-                                      <span class="badge bg-light-danger">soon</span>
+                                      <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>     
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">Kinerja SDA
-                                       <span class="badge bg-light-danger">soon</span>
+                                       <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">P3A
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">Bencana
-                                        <span class="badge bg-light-danger">soon</span>
+                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                             </ul>
@@ -134,7 +134,7 @@
                             <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item ">
                                     <a href="#" class="submenu-link">Unit Center Assistant
-                                    <span class="badge bg-light-danger">soon</span>
+                                    <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
                             </ul>

@@ -23,4 +23,8 @@ class ModelPenilaianKinerja extends Model
     //           ->where('id_penilaian' , $id)
     //           ->get()->getRowArray();                          
     // }
+    public function countNilaiKinerja(){
+        return $this->db->table('penilaian_sda')->select('COUNT(*) as total_penilaian')
+               ->get()->getRowArray();
+    }
 }

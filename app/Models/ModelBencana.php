@@ -21,4 +21,9 @@ class ModelBencana extends Model
                     ->join('user AS user_created', 'user_created.id_user = bencana.user_created', 'LEFT')
                     ->findAll();
     }
+
+    public function countBencana(){
+        return $this->db->table('bencana')->select('COUNT(*) as total_bencana')
+               ->get()->getRowArray();
+    }
 }

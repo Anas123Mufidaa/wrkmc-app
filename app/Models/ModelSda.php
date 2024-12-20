@@ -31,4 +31,9 @@ class ModelSda extends Model
                     ->join('user AS user_updated', 'user_updated.id_user = sda.user_updated', 'LEFT')
                     ->find($id);                         
     }
+
+    public function countSda(){
+        return $this->db->table('sda')->select('COUNT(*) as total_sda')
+               ->get()->getRowArray();
+    }
 }
