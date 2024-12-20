@@ -42,7 +42,7 @@
                                         <th class="text-center">Usulan</th>
                                         <th class="text-center">Tebusan</th>
                                         <th class="text-center" style="white-space: nowrap;">Updated At</th>
-                                        <th class="text-center">Aksi</th>
+                                        <th width ="155px" class="text-center">Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -64,6 +64,9 @@
                                         <td class="text-center"><?= $value['tebusan']; ?></td>
                                         <td class="text-center" style="white-space: nowrap;"><?= $value['updated_at']; ?></td>
                                         <td width ="200px"style="white-space: nowrap;" class="text-center"> 
+                                        <a href="<?= base_url('sda/detail/'. $value['id_bencana']);?>" type="button" data-bs-toggle="modal" class="btn btn-primary"> 
+                                            <i class="bi bi-info-circle-fill"></i>
+                                        </a>  
                                         <a href="<?= base_url('bencana/edit/'. $value['id_bencana']);?>" type="button"  class="btn btn-warning"> 
                                             <i class="bi bi-pencil-square"></i>
                                         </a>

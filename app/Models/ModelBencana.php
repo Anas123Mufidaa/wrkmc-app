@@ -8,7 +8,7 @@ class ModelBencana extends Model
 {
     protected $table            = 'bencana';
     protected $primaryKey       = 'id_bencana';
-    protected $allowedFields    = ['user_created','jenis_kejadian','hari_kejadian','tanggal_kejadian'
+    protected $allowedFields    = ['user_created','jenis_kejadian','hari_kejadian','tanggal_kejadian','tempat_kejadian'
                                    ,'waktu_kejadian','penyebab_kronologis','curahHujan_PosAir','dampak_bencana','lama_bahaya','tindakan','kondisi','usulan','tebusan'];
     // Dates
     protected $useTimestamps = true;

@@ -58,23 +58,31 @@
                                                             <div class="col-md-8 form-group">
                                                                 <input class="form-control" type="time" name="waktu_kejadian" value="<?= $data_bencana['waktu_kejadian']; ?>">
                                                             </div>
+
+                                                            <div class="col-md-4">
+                                                                <label for="waktu_kejadian"><b>Tempat Kejadian :</b></label>
+                                                            </div>
+                                                            <div class="col-md-8 form-group">
+                                                                <input class="form-control" type="text" name="tempat_kejadian" value="<?= $data_bencana['tempat_kejadian']; ?>">
+                                                            </div>
+
                                                         <div class="col-12 d-flex justify-content-end mt-3">
                                                             <button type="button" class="btn btn-primary me-1 mb-1 next-step">Next</button>
                                                         </div>
                                                     </div>
                                                     <div class="row step step-2">    
                                                             <div class="col-md-4">
-                                                                <label for="curahHujan-PosAir"><b>Curah Hujan Pos Air :</b></label>
+                                                                <label for="curahHujan-PosAir"><b>Curah Hujan dan POS Duga Air :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
-                                                                <input class="form-control" type="text" name="curahHujan_PosAir" value="<?= $data_bencana['curahHujan_PosAir']; ?>">
+                                                                <textarea class="form-control" type="text" name="curahHujan_PosAir"><?= $data_bencana['curahHujan_PosAir']; ?></textarea>
                                                             </div>
 
                                                             <div class="col-md-4">
                                                                 <label for="dampak_bencana"><b>Dampak Bencana :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
-                                                                <input class="form-control" type="text" name="dampak_bencana" value="<?= $data_bencana['dampak_bencana']; ?>">
+                                                                <textarea class="form-control" type="text" name="dampak_bencana"><?= $data_bencana['dampak_bencana']; ?></textarea>
                                                             </div>  
 
                                                             <div class="col-md-4">
@@ -97,21 +105,21 @@
                                                     </div>    
                                                     <div class="row step step-3">    
                                                             <div class="col-md-4">
-                                                                <label for="tindakan"><b>Tindakan :</b></label>
+                                                                <label for="tindakan"><b>Tindakan yang telah dilakukan :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
                                                                 <textarea class="form-control" type="text" name="tindakan"><?= $data_bencana['tindakan']; ?></textarea>
                                                             </div>
 
                                                             <div class="col-md-4">
-                                                                <label for="kondisi"><b>Kondisi :</b></label>
+                                                                <label for="kondisi"><b>Kondisi Saat Ini :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
                                                                 <textarea class="form-control" type="text" name="kondisi"><?= $data_bencana['kondisi']; ?></textarea>
                                                             </div>
                                                             
                                                             <div class="col-md-4">
-                                                                <label for="usulan"><b>Usulan :</b></label>
+                                                                <label for="usulan"><b>Usulan Penanganan :</b></label>
                                                             </div>
                                                             <div class="col-md-8 form-group">
                                                                 <textarea class="form-control" type="text" name="usulan"><?= $data_bencana['usulan']; ?></textarea>

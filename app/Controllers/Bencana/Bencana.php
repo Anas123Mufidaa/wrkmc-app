@@ -52,6 +52,7 @@ class Bencana extends BaseController
            $hari_kejadian = $this->request->getPost('hari_kejadian');
            $tanggal_kejadian = $this->request->getPost('tanggal_kejadian');
            $waktu_kejadian = $this->request->getPost('waktu_kejadian');
+           $tempat_kejadian = $this->request->getPost('tempat_kejadian');
            $penyebab_kronologis = $this->request->getPost('penyebab_kronologis');
            $curahHujan_PosAir = $this->request->getPost('curahHujan_PosAir');
            $dampak_bencana = $this->request->getPost('dampak_bencana');
@@ -68,6 +69,7 @@ class Bencana extends BaseController
                'hari_kejadian'   => $hari_kejadian,
                'tanggal_kejadian' => $tanggal_kejadian,
                'waktu_kejadian'   => $waktu_kejadian,
+               'tempat_kejadian'   => $tempat_kejadian,
                'penyebab_kronologis' => $penyebab_kronologis,
                'curahHujan_PosAir'=> $curahHujan_PosAir,
                'dampak_bencana'   => $dampak_bencana,
@@ -113,6 +115,7 @@ class Bencana extends BaseController
            $hari_kejadian = $this->request->getPost('hari_kejadian');
            $tanggal_kejadian = $this->request->getPost('tanggal_kejadian');
            $waktu_kejadian = $this->request->getPost('waktu_kejadian');
+           $tempat_kejadian = $this->request->getPost('tempat_kejadian');
            $penyebab_kronologis = $this->request->getPost('penyebab_kronologis');
            $curahHujan_PosAir = $this->request->getPost('curahHujan_PosAir');
            $dampak_bencana = $this->request->getPost('dampak_bencana');
@@ -128,6 +131,7 @@ class Bencana extends BaseController
                 'hari_kejadian'   => $hari_kejadian,
                 'tanggal_kejadian' => $tanggal_kejadian,
                 'waktu_kejadian'   => $waktu_kejadian,
+                'tempat_kejadian'   => $tempat_kejadian,
                 'penyebab_kronologis' => $penyebab_kronologis,
                 'curahHujan_PosAir'=> $curahHujan_PosAir,
                 'dampak_bencana'   => $dampak_bencana,
