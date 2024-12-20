@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                     <h6 class="text-muted font-semibold">Total User</h6>
-                                    <h6 class="font-extrabold mb-0"><?= $user['total_user']; ?></h6>
+                                    <h2 class="font-extrabold mb-0"><?= $user['total_user']; ?></h2>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                     <h6 class="text-muted font-semibold">Total Sumber Daya Air</h6>
-                                    <h6 class="font-extrabold mb-0"><?= $sda['total_sda']; ?></h6>
+                                    <h2 class="font-extrabold mb-0"><?= $sda['total_sda']; ?></h2>
                                 </div>
                             </div>
                         </div>

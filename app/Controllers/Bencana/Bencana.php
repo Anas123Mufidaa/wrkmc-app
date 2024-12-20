@@ -19,6 +19,14 @@ class Bencana extends BaseController
             'data_bencana' => $this->modelBencana->findAll(),
         ];
         return view('bencana/bencana',$data);
+    }
+    public function detail($id)
+    {
+        $data = [
+            'title' => 'Detail Data Bencana',
+            'detail_bencana' => $this->modelBencana->getDetailDataBencana($id),
+        ];
+        return view('bencana/bencana-detail' , $data);
     }     
     public function create()
     {

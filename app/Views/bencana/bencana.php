@@ -29,19 +29,11 @@
                                 <thead>
                                     <tr>
                                         <th>No</th>
-                                        <th class="text-center" style="white-space: nowrap;">Jenis Bencana</th>
-                                        <th class="text-center">Hari</th>
                                         <th class="text-center">Tanggal</th>
                                         <th class="text-center">Waktu</th>
-                                        <th class="text-center">Penyebab Kronologis</th>
-                                        <th class="text-center" style="white-space: nowrap;">Curah Hujan Pos Air</th>
-                                        <th class="text-center">Dampak Bencana</th>
-                                        <th class="text-center" style="white-space: nowrap;">Lama Bahaya</th>
-                                        <th class="text-center">Tindakan</th>
-                                        <th class="text-center">Kondisi</th>
-                                        <th class="text-center">Usulan</th>
-                                        <th class="text-center">Tebusan</th>
-                                        <th class="text-center" style="white-space: nowrap;">Updated At</th>
+                                        <th class="text-center" >Jenis Bencana</th>
+                                        <th class="text-center">Lama Bahaya</th>
+                                        <th class="text-center">Updated At</th>
                                         <th width ="155px" class="text-center">Aksi</th>
                                     </tr>
                                 </thead>
@@ -50,21 +42,13 @@
                                     <?php foreach ($data_bencana as $key => $value) : ?>
                                     <tr>
                                         <td width ="50px" class="text-center"scope="row"><?= $i++; ?></td>
-                                        <td class="text-center"style="white-space: nowrap;"><?= $value['jenis_kejadian']; ?></td>
-                                        <td class="text-center"><?= $value['hari_kejadian']; ?></td>
-                                        <td class="text-center" style="white-space: nowrap;"><?= $value['tanggal_kejadian']; ?></td>
+                                        <td class="text-center" ><?= $value['tanggal_kejadian']; ?></td>
                                         <td class="text-center"><?= $value['waktu_kejadian']; ?></td>
-                                        <td class="text-center"><?= $value['penyebab_kronologis']; ?></td>
-                                        <td class="text-center"><?= $value['curahHujan_PosAir']; ?></td>
-                                        <td class="text-center"><?= $value['dampak_bencana']; ?></td>
+                                        <td class="text-center"><?= $value['jenis_kejadian']; ?></td>
                                         <td class="text-center"><?= $value['lama_bahaya']; ?></td>
-                                        <td class="text-center"><?= $value['tindakan']; ?></td>
-                                        <td class="text-center"><?= $value['kondisi']; ?></td>
-                                        <td class="text-center"><?= $value['usulan']; ?></td>
-                                        <td class="text-center"><?= $value['tebusan']; ?></td>
-                                        <td class="text-center" style="white-space: nowrap;"><?= $value['updated_at']; ?></td>
-                                        <td width ="200px"style="white-space: nowrap;" class="text-center"> 
-                                        <a href="<?= base_url('sda/detail/'. $value['id_bencana']);?>" type="button" data-bs-toggle="modal" class="btn btn-primary"> 
+                                        <td class="text-center" ><?= $value['updated_at']; ?></td>
+                                        <td width ="200px" class="text-center"> 
+                                        <a href="<?= base_url('bencana/detail/'. $value['id_bencana']);?>" type="button" data-bs-toggle="modal" class="btn btn-primary"> 
                                             <i class="bi bi-info-circle-fill"></i>
                                         </a>  
                                         <a href="<?= base_url('bencana/edit/'. $value['id_bencana']);?>" type="button"  class="btn btn-warning"> 

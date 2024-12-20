@@ -111,7 +111,11 @@ class Filters extends BaseFilters
                 'dashboard',
                 'dashboard/*',
                 'profile',
-                'profile/*',
+                'profile/*', 
+                'sda',
+                'sda/*', 
+                'bencana',
+                'bencana/*',
             ]
         ]
     ];

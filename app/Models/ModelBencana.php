@@ -14,12 +14,11 @@ class ModelBencana extends Model
     protected $useTimestamps = true;
 
 
-    public function getAllData()
-    {
-        return $this->select('bencana.*, 
+    public function getDetailDataBencana($id){
+        return$this->select('bencana.*, 
                               user_created.nama_user AS created_by')
                     ->join('user AS user_created', 'user_created.id_user = bencana.user_created', 'LEFT')
-                    ->findAll();
+                    ->find($id);                         
     }
 
     public function countBencana(){

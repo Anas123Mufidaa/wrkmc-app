@@ -41,7 +41,7 @@ $routes->group('sda', function ($routes) {
 });
 $routes->group('bencana', function ($routes) {
     $routes->get('/', 'Bencana\Bencana::index');
-    $routes->get('detail/(:num)', 'Detail\Bencana::detail/$1');
+    $routes->get('detail/(:num)', 'Bencana\Bencana::detail/$1');
     $routes->get('create', 'Bencana\Bencana::create');
     $routes->post('save', 'Bencana\Bencana::save');
     $routes->get('edit/(:num)', 'Bencana\Bencana::edit/$1');

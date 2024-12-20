@@ -10,7 +10,7 @@
                                     <div class="col-md-4">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h4 class="text-right"><?= $detail_sda['nama_sda']; ?></h4>
+                                                <h4 class="text-right">Gambar <?= $detail_sda['nama_sda']; ?></h4>
                                             </div>
                                             <div class="card-body">
                                                 <a href="<?= base_url('backEnd_template') ?>/assets/gambar_sda/<?= $detail_sda['gambar_sda']; ?>" data-lightbox="gallery" data-title="Gambar SDA">
@@ -22,7 +22,7 @@
                                     <div class="col-md-8">
                                         <div class="card">
                                             <div class="card-header">
-                                                <h3>Detail Data Sda</h3>
+                                                <h3>Data <?= $detail_sda['nama_sda']; ?></h3>
                                             </div>
                                             <div class="card-body">
                                                 <table class="table" style="min-height: 310px;font-weight:bold;" cellpadding="10">

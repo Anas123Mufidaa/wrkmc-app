@@ -32,4 +32,7 @@
   #multi-step-form{
     overflow-x: hidden;
   }
+  .head{
+    white-space: nowrap;
+  }
   

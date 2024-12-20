@@ -34,7 +34,7 @@
                                     <a href="<?= base_url('sda/penilaian-kinerja') ?>" class=" submenu-link">Nilai Kinerja</a>
                                 </li>
                                 <li class="submenu-item ">
-                                    <a href="#" class="submenu-link">Laporan SDA
+                                    <a href="#" class="submenu-link head">Laporan SDA
                                         <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>    
@@ -65,13 +65,13 @@
                                     <a href="<?= base_url('bencana') ?>" class="submenu-link">Data Bencana</a>
                                 </li>     
                                 <li class="submenu-item  ">
-                                    <a href="#" class=" submenu-link">
+                                    <a href="#" class="submenu-link head">
                                         Laporan Bencana
                                         <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>   
-                                <li class="submenu-item  ">
-                                    <a href="#" class=" submenu-link">Satgas Bencana
+                                <li class="submenu-item">
+                                    <a href="#" class="submenu-link head">Satgas Bencana
                                         <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
@@ -108,8 +108,8 @@
                                       <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>     
-                                <li class="submenu-item  ">
-                                    <a href="#" class=" submenu-link">Kinerja SDA
+                                <li class="submenu-item">
+                                    <a href="#" class="submenu-link head">Kinerja SDA
                                        <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
@@ -133,7 +133,7 @@
                             </a>
                             <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item ">
-                                    <a href="#" class="submenu-link">Unit Center Assistant
+                                    <a href="#" class="submenu-link ">Unit Center Assistant
                                     <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
