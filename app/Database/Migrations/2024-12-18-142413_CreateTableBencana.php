@@ -39,6 +39,11 @@ class CreateTableBencana extends Migration
                 'type'       => 'VARCHAR',
                 'constraint' => '100',
                 'null'       => true,
+            ],
+            'tempat_kejadian' => [
+                'type'       => 'VARCHAR',
+                'constraint' => 255,
+                'null'       => true,
             ],    
             'penyebab_kronologis' => [
                 'type'       => 'TEXT',
