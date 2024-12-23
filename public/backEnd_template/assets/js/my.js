@@ -58,3 +58,11 @@ function displayStep(stepNumber) {
       $(".progress-bar").css("width", progressPercentage + "%");
     }
   });
+  $(document).ready(function () {
+    $('.datepicker').datepicker({
+        format: "yyyy",       // Format hanya tahun
+        viewMode: "years",    // Menampilkan tahun saja
+        minViewMode: "years", // Menampilkan tahun saja
+        autoclose: true       // Menutup otomatis setelah memilih tahun
+    });
+});

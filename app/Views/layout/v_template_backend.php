@@ -40,8 +40,11 @@
 
      <link href="https://cdn.jsdelivr.net/npm/quill/dist/quill.snow.css" rel="stylesheet">
      <script src="https://cdn.jsdelivr.net/npm/quill/dist/quill.min.js"></script>
-
-
+     
+     <!-- chart js -->
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <!-- datepicker -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <style>
         .dataTable-selector{
             float:right;
@@ -57,18 +60,24 @@
     <div id="app">
         <div id="sidebar" class="active">
         
-        <?= $this->include('layout/menu') ?>
+            <?= $this->include('layout/menu') ?>
+        </div>
         </div>
         
         <div id="main">
+          <div class="page-content">
             <?= $this->renderSection('content') ?>
+           </div>
+
+            
+            <footer>
+                <!-- <div class="footer clearfix mb-0 text-muted">
+                    <div class="float-start">
+                        <p>Developed By &copy; Anas Mufida 2024 &mdash;</p>
+                    </div>
+                </div> -->
+            </footer>
         </div>
-        <footer>
-            <div class="footer clearfix mb-0 text-muted">
-                <p>Developed By &copy; Anas Mufida 2024 &mdash;</p>
-            </div>
-        </footer>
-    </div>
     </div>
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/js/bootstrap.bundle.min.js"></script>
@@ -94,6 +103,9 @@
      <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
      <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/dataTables.fixedColumns.js"></script>
      <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/fixedColumns.dataTables.js"></script>
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+
 
     <!-- my js -->
     <script src="<?= base_url('backEnd_template') ?>/assets/js/app.js"></script>
@@ -129,6 +141,15 @@
                     useFontAwesome: true,
                 });
             <?php endif; ?>   
+            $(document).ready(function () {
+                $('.datepicker').datepicker({
+                    format: "yyyy",       // Format hanya tahun
+                    viewMode: "years",    // Menampilkan tahun saja
+                    minViewMode: "years", // Menampilkan tahun saja
+                    autoclose: true       // Menutup otomatis setelah memilih tahun
+                });
+            });
+
     });
 </script>
 </body>

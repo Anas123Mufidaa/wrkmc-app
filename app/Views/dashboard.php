@@ -46,7 +46,7 @@
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                     <h6 class="text-muted font-semibold">Total Bencana</h6>
-                                    <h6 class="font-extrabold mb-0"><?= $bencana['total_bencana']; ?></h6>
+                                    <h2 class="font-extrabold mb-0"><?= $bencana['total_bencana']; ?></h2>
                                 </div>
                             </div>
                         </div>
@@ -80,12 +80,12 @@
                                 </div>
                                 <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                                     <h6 class="text-muted font-semibold">Total Penilaian Kinerja</h6>
-                                    <h6 class="font-extrabold mb-0"><?= $penilaian['total_penilaian']; ?></h6>
+                                    <h2 class="font-extrabold mb-0"><?= $penilaian['total_penilaian']; ?></h2>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            </section>
+        </section>
 <?= $this->endSection() ?>        

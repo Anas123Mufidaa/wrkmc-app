@@ -1,4 +1,4 @@
-<div class="sidebar-wrapper active bg-primary">
+<div class="sidebar-wrapper active">
         <div class="sidebar-header">
                     <div class="d-flex justify-content-between">
                         <div class="logo" >
@@ -9,8 +9,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="sidebar-menu">
-                    <ul class="menu w-auto ">
+                <div class="sidebar-menu ">
+                    <ul class="menu">
 
                         <li class="sidebar-item <?= (uri_string() == 'dashboard') ? 'active' : ''; ?>">
                             <a href="<?= base_url('dashboard') ?>" class="sidebar-link">
@@ -97,21 +97,19 @@
                             </ul>
                         </li>      
                         
-                        <li class="sidebar-item has-sub ">
+                        <li class="sidebar-item <?=  (str_starts_with(uri_string(), 'monitoring')) ? 'active' : ''; ?> has-sub">
                             <a href="#" class="sidebar-link">
-                                <i class="fa fa-desktop text-primary"></i>
+                                <i class="fa fa-desktop text-primary <?=  (str_starts_with(uri_string(), 'monitoring')) ? 'text-light' : ''; ?>"></i>
                                 <span>Monitoring</span>
                             </a>
-                            <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
+                            <ul class="submenu <?=  (str_starts_with(uri_string(), 'monitoring')) ? 'active' : ''; ?> submenu-open" style="--submenu-height: 172px;">     
                                 <li class="submenu-item ">
                                     <a href="#" class="submenu-link">Screen
                                       <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>     
-                                <li class="submenu-item">
-                                    <a href="#" class="submenu-link head">Kinerja SDA
-                                       <span class="badge bg-light-warning">soon</span>
-                                    </a>
+                                <li class="submenu-item <?= (uri_string() == 'monitoring/kinerja-sda') ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('monitoring/kinerja-sda') ?>" class="submenu-link head">Kinerja SDA</a>
                                 </li>  
                                 <li class="submenu-item  ">
                                     <a href="#" class=" submenu-link">P3A
@@ -166,5 +164,4 @@
                 </div>
                 <button class="sidebar-toggler btn x"><i data-feather="x"></i></button>
             </div>
-        </div>
        

@@ -48,3 +48,9 @@ $routes->group('bencana', function ($routes) {
     $routes->post('update-by/(:num)', 'Bencana\Bencana::updateBy/$1');
     $routes->get('delete/(:segment)', 'Bencana\Bencana::delete/$1');
 });
+
+$routes->group('monitoring', function ($routes) {
+    //kinerja sda
+    $routes->get('kinerja-sda', 'Monitoring\KinerjaSDA::index');
+    $routes->post('kinerja-sda/filter', 'Monitoring\KinerjaSDA::filter');
+});

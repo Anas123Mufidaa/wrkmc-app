@@ -153,6 +153,7 @@
                   }
               }
           });
+          
           // Grafik Bencana
           const ctx2 = document.getElementById('bencanaChart').getContext('2d');
 
@@ -161,8 +162,8 @@
               datasets: [{
                   label: 'Jumlah Bencana',
                   data: <?= json_encode($grafik_bencana) ?>,
-                  backgroundColor: 'rgba(250, 0, 0, 0.2)',
-                  borderColor: 'rgb(235, 54, 54)',
+                  backgroundColor: '#f39c12',
+                  borderColor: '#e67e22',
                   borderWidth: 1,
                   maxBarThickness: 50 // Batasi lebar batang
               }]
