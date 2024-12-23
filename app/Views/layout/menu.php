@@ -43,7 +43,7 @@
                          
                         <li class="sidebar-item has-sub ">
                             <a href="#" class="sidebar-link">
-                                <i class="bi bi-sliders text-primary"></i>
+                                <i class="fa fa-briefcase text-primary"></i>
                                 <span>P3A</span>
                             </a>
                             <ul class="submenu submenu-open" style="--submenu-height: 172px;">     
