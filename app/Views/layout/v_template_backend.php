@@ -21,7 +21,6 @@
          
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.css" />
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/app.css">
-    <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/mycss.css">
     <link rel="shortcut icon" href="<?= base_url('backEnd_template') ?>/assets/images/favicon.svg" type="image/x-icon">\
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 

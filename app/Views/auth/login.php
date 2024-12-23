@@ -24,7 +24,7 @@
                     <div class="auth-logo">
                         <a href="index.html"><img src="<?= base_url('logo-wrkmc') ?>/Logo-PU.jpg" alt="Logo"></a>    
                     </div>
-                    <h6 class="auth-title">Login<span><br><marquee direction="right">Water Resource Knowledge Management Center</marquee></span></h6>
+                    <h6 class="auth-title">Login<span><br><marquee direction="left">Water Resource Knowledge Management Center</marquee></span></h6>
                         <?php
                             if (session()->get('error')) {
                                 echo "<div class= 'alert alert-light-danger color-danger' role='alert'>" . session()->get('error') . "</div>";
