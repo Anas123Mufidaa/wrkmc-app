@@ -53,4 +53,7 @@ $routes->group('monitoring', function ($routes) {
     //kinerja sda
     $routes->get('kinerja-sda', 'Monitoring\KinerjaSDA::index');
     $routes->post('kinerja-sda/filter', 'Monitoring\KinerjaSDA::filter');
+
+    //bencana
+    $routes->match(['get', 'post'], 'grafik-bencana', 'Monitoring\BencanaGrafik::index');
 });

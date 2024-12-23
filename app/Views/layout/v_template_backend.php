@@ -46,13 +46,12 @@
      <!-- datepicker -->
      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <style>
-        .dataTable-selector{
-            float:right;
+        .dt-input{
+            margin-right:15px;
         }
         #nilaiOutputEdit {
             visibility: visible !important;
-        }
-        
+        } 
     </style>
 </head>
 

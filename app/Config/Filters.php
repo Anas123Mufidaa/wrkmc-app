@@ -116,6 +116,8 @@ class Filters extends BaseFilters
                 'sda/*', 
                 'bencana',
                 'bencana/*',
+                'monitoring',
+                'monitoring/*',
             ]
         ]
     ];

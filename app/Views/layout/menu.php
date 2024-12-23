@@ -111,15 +111,13 @@
                                 <li class="submenu-item <?= (uri_string() == 'monitoring/kinerja-sda') ? 'active' : ''; ?>">
                                     <a href="<?= base_url('monitoring/kinerja-sda') ?>" class="submenu-link head">Kinerja SDA</a>
                                 </li>  
-                                <li class="submenu-item  ">
+                                <li class="submenu-item">
                                     <a href="#" class=" submenu-link">P3A
                                         <span class="badge bg-light-warning">soon</span>
                                     </a>
                                 </li>  
-                                <li class="submenu-item  ">
-                                    <a href="#" class=" submenu-link">Bencana
-                                        <span class="badge bg-light-warning">soon</span>
-                                    </a>
+                                <li class="submenu-item  <?= (uri_string() == 'monitoring/grafik-bencana') ? 'active' : ''; ?>">
+                                    <a href="<?= base_url('monitoring/grafik-bencana') ?>" class=" submenu-link">Bencana</a>
                                 </li>  
                             </ul>
                         </li>          
