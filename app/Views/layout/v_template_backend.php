@@ -21,8 +21,7 @@
          
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.css" />
     <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/css/app.css">
-    <link rel="shortcut icon" href="<?= base_url('backEnd_template') ?>/assets/images/favicon.svg" type="image/x-icon">\
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="<?= base_url('backEnd_template') ?>/assets/images/favicon.svg" type="image/x-icon">
 
     <!-- notiflix -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notiflix/dist/notiflix-3.2.6.min.css" />
@@ -30,20 +29,19 @@
 
     <!-- CDN CSS untuk Dropify -->
     <link href="https://cdn.jsdelivr.net/npm/dropify@0.2.2/dist/css/dropify.min.css" rel="stylesheet">
-     <!-- CDN CSS untuk Lightbox -->
-     <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
+    <!-- CDN CSS untuk Lightbox -->
+    <link href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/css/lightbox.min.css" rel="stylesheet">
     <!-- datatable -->
-     <link href="https://cdn.datatables.net/2.1.8/css/dataTables.dataTables.css" rel="stylesheet">
-     <link href="https://cdn.datatables.net/fixedcolumns/5.0.4/css/fixedColumns.dataTables.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= base_url('backEnd_template') ?>/assets/vendors/datatables/dataTables.css">
+    <link href="https://cdn.datatables.net/fixedcolumns/5.0.4/css/fixedColumns.dataTables.css" rel="stylesheet">
  
-
-     <link href="https://cdn.jsdelivr.net/npm/quill/dist/quill.snow.css" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/quill/dist/quill.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/quill/dist/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/quill/dist/quill.min.js"></script>
      
-     <!-- chart js -->
-     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-     <!-- datepicker -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <!-- chart js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- datepicker -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css" rel="stylesheet">
     <style>
         .dt-input{
             margin-right:15px;
@@ -51,6 +49,7 @@
         #nilaiOutputEdit {
             visibility: visible !important;
         } 
+
     </style>
 </head>
 
@@ -77,7 +76,6 @@
             </footer>
         </div>
     </div>
-    <script src="<?= base_url('backEnd_template') ?>/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/apexcharts/apexcharts.js"></script>
@@ -85,10 +83,8 @@
     <script src="<?= base_url('backEnd_template') ?>/assets/js/pages/dashboard.js"></script>
 
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/perfect-scrollbar/perfect-scrollbar.min.js"></script>
-    <script src="<?= base_url('backEnd_template') ?>/assets/js/bootstrap.bundle.min.js"></script>
 
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/simple-datatables/simple-datatables.js"></script>
-    <script src="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/choices.js/choices.min.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/js/main.js"></script>
 
@@ -97,14 +93,12 @@
      <!-- CDN JS untuk Lightbox -->
      <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/dist/js/lightbox.min.js"></script>
     <!-- datatable -->
-     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <script src="<?= base_url('backEnd_template') ?>/assets/vendors/datatables/dataTables.js"></script>
      <script src="https://cdn.datatables.net/2.1.8/js/dataTables.js"></script>
      <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/dataTables.fixedColumns.js"></script>
      <script src="https://cdn.datatables.net/fixedcolumns/5.0.4/js/fixedColumns.dataTables.js"></script>
 
      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
-
-
     <!-- my js -->
     <script src="<?= base_url('backEnd_template') ?>/assets/js/app.js"></script>
     <script src="<?= base_url('backEnd_template') ?>/assets/js/my.js"></script>

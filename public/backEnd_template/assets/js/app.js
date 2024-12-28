@@ -7,7 +7,7 @@
 //     right: 1  
 //   }
 // });
-new DataTable('#table1', {
+var dataTable = new DataTable('#table1', {
   fixedColumns: {
       start: 2,
       end: 1
